@@ -1,0 +1,14 @@
+
+
+
+body {
+  margin: 0;
+}
+
+ul{
+  margin:0;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
