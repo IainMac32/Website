@@ -2,6 +2,7 @@ import './App.css';
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import JobModal from './JobModal';
+import githubLogo from '../assets/github.png';
 
 
 const theme = {
@@ -197,10 +198,10 @@ export default function App() {
 
           <div style={{ display: "flex", alignItems: "center" }}>
             <a href="https://github.com/IainMac32" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/github.png" alt="GitHub Logo" style={{ width: "2.5vw", marginRight: "2vw" }} />
+              <img src={githubLogo} alt="GitHub Logo" style={{ width: "2.5vw", marginRight: "2vw" }} />
             </a>
             <a href="https://ca.linkedin.com/in/iain-macdonald-78717720a" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/linked.png" alt="LinkedIn Logo" style={{ width: "2.5vw" }} />
+              <img src="/public/assets/linked.png" alt="LinkedIn Logo" style={{ width: "2.5vw" }} />
             </a>
           </div>
 
