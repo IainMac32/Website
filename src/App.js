@@ -2,7 +2,8 @@ import './App.css';
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import JobModal from './JobModal';
-import githubLogo from '../assets/github.png';
+import githubLogo from './assets/github.png';
+import linkedinLogo from './assets/linkedinLogo.png';
 
 
 const theme = {
@@ -91,18 +92,21 @@ const Button2 = styled.button`
     margin-top: 0.2em;
   }
 
+  box-sizing: border-box; /* Include padding and border in the total width */
+
   @media (min-width: 768px) {
-    margin: 20px; /* Increase the margin only on larger screens */
-    width: calc(50% - 40px); /* Adjust the width to accommodate the increased margin */
-    padding: 8vh 20%; /* Adjust the vertical padding for increased height on larger screens */
-    font-size: 2vw; /* Adjust the font-size for larger text on larger screens */
+    width: 45%; /* Adjust the width for larger screens to form a 2x2 grid */
+    margin: 2% 2%; /* Add margin for spacing between buttons */
+    max-width: none; /* Remove the max-width property to allow wider buttons */
+    font-size: 1.5vw; /* Adjust the font-size for larger screens */
+    padding: 7vh; /* Adjust the vertical padding for increased height on larger screens */
   }
 
   @media (max-width: 768px) {
-    width: 100%; /* Take full width on smaller screens */
+    width: 100%; /* Take full width on smaller screens to stack vertically */
+    margin: 10px; /* Default spacing between buttons on smaller screens */
+    font-size: 1.2vw; /* Adjust the font-size for smaller screens */
     padding: 5vh 15%; /* Adjust the vertical padding for increased height on smaller screens */
-    margin: 10px;
-    font-size: 1.2vw; /* Adjust the font-size for larger text on smaller screens */
   }
 `;
 
@@ -198,12 +202,20 @@ export default function App() {
 
           <div style={{ display: "flex", alignItems: "center" }}>
             <a href="https://github.com/IainMac32" target="_blank" rel="noopener noreferrer">
-              <img src={githubLogo} alt="GitHub Logo" style={{ width: "2.5vw", marginRight: "2vw" }} />
+              <div style={{ marginRight: "2vw"}}>
+                <img src={githubLogo} alt="GitHub Logo" style={{ width: "2.5vw" }} />
+              </div>
             </a>
             <a href="https://ca.linkedin.com/in/iain-macdonald-78717720a" target="_blank" rel="noopener noreferrer">
-              <img src="/public/assets/linked.png" alt="LinkedIn Logo" style={{ width: "2.5vw" }} />
+              <div>
+                <img src={linkedinLogo} alt="LinkedIn Logo" style={{ width: "2.5vw" }} />
+              </div>
             </a>
           </div>
+
+
+
+
 
 
 
