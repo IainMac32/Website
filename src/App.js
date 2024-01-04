@@ -171,17 +171,13 @@ export default function App() {
   const section2 = useRef();
   const section3 = useRef();
   const section4 = useRef();
-  const toTop = useRef();
+
 
   const scrollHandler = (elmRef) => {
     window.scrollTo({ top: elmRef.current.offsetTop, behavior: "smooth" });
   };
 
-  const scrollToTop = (elmRef) => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const [show, setshow] = useState(false);
+  const [setshow] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       console.log("window.scrollY", window.scrollY);
@@ -197,7 +193,7 @@ export default function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  });
 
   return (
     <div>
