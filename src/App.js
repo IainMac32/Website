@@ -53,11 +53,14 @@ const ButtonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 800px; /* Adjust max-width as needed */
-  margin: 0 auto; /* Center the container */
+  max-width: 1500px; /* Adjust max-width as needed */
+  margin 0% auto;
+  box-sizing: border-box;
 `;
 
 const Button2 = styled.button`
+  box-sizing: border-box;
+  position: relative;
   position: relative;
   background-color: ${(props) => theme[props.theme].default};
   color: white;
@@ -75,6 +78,7 @@ const Button2 = styled.button`
 
   &:hover {
     background-color: ${(props) => theme[props.theme].hover};
+    transform: scale(1.03);
   }
 
   /* Additional styles for employment information */
@@ -95,11 +99,32 @@ const Button2 = styled.button`
   box-sizing: border-box; /* Include padding and border in the total width */
 
   @media (min-width: 768px) {
-    width: 45%; /* Adjust the width for larger screens to form a 2x2 grid */
-    margin: 2% 2%; /* Add margin for spacing between buttons */
-    max-width: none; /* Remove the max-width property to allow wider buttons */
-    font-size: 1.5vw; /* Adjust the font-size for larger screens */
-    padding: 7vh; /* Adjust the vertical padding for increased height on larger screens */
+    width: 33vw; /* Adjust the width for larger screens to form a 2x2 grid */
+    font-size: 2vw; /* Adjust the font-size for larger screens */
+    padding: 11vh; /* Adjust the vertical padding for increased height on larger screens */
+
+    /* Set individual left and right margins for each button */
+    &:nth-child(1) {
+      margin-right: 0%; /* Adjust the right margin for the first button */
+      margin-left: 4%; /* Adjust the left margin for the first button */
+      margin-bottom: 2.5%;
+    }
+
+    &:nth-child(2) {
+      margin-right: 4%; /* Adjust the right margin for the second button */
+      margin-left: 0%; /* Adjust the left margin for the second button */
+      margin-bottom: 2.5%;
+    }
+
+    &:nth-child(3) {
+      margin-right: 0%; /* Adjust the right margin for the first button */
+      margin-left: 4%; /* Adjust the left margin for the first button */
+    }
+
+    &:nth-child(4) {
+      margin-right: 4%; /* Adjust the right margin for the second button */
+      margin-left: 0%; /* Adjust the left margin for the second button */
+    }
   }
 
   @media (max-width: 768px) {
@@ -307,13 +332,6 @@ export default function App() {
         }}
       >Skills</div>
 
-      <div style={{
-        position: "fixed",
-        right: 10,
-        bottom: 20,
-      }}
-      onClick={() => scrollToTop(toTop)}
-      >{show && <Button>GO TO TOP</Button>}</div>
     </div>
   );
 }
