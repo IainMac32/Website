@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import JobModal from './JobModal';
 import githubLogo from './assets/github.png';
@@ -97,34 +97,13 @@ const Button2 = styled.button`
   }
 
   box-sizing: border-box; /* Include padding and border in the total width */
+  ${(props) => props.customStyles}
 
   @media (min-width: 768px) {
     width: 33vw; /* Adjust the width for larger screens to form a 2x2 grid */
     font-size: 2vw; /* Adjust the font-size for larger screens */
     padding: 11vh; /* Adjust the vertical padding for increased height on larger screens */
 
-    /* Set individual left and right margins for each button */
-    &:nth-child(1) {
-      margin-right: 0%; /* Adjust the right margin for the first button */
-      margin-left: 4%; /* Adjust the left margin for the first button */
-      margin-bottom: 2.5%;
-    }
-
-    &:nth-child(2) {
-      margin-right: 4%; /* Adjust the right margin for the second button */
-      margin-left: 0%; /* Adjust the left margin for the second button */
-      margin-bottom: 2.5%;
-    }
-
-    &:nth-child(3) {
-      margin-right: 0%; /* Adjust the right margin for the first button */
-      margin-left: 4%; /* Adjust the left margin for the first button */
-    }
-
-    &:nth-child(4) {
-      margin-right: 4%; /* Adjust the right margin for the second button */
-      margin-left: 0%; /* Adjust the left margin for the second button */
-    }
   }
 
   @media (max-width: 768px) {
@@ -177,23 +156,7 @@ export default function App() {
     window.scrollTo({ top: elmRef.current.offsetTop, behavior: "smooth" });
   };
 
-  const [setshow] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      console.log("window.scrollY", window.scrollY);
-      if (window.scrollY > 500) {
-        setshow(true);
-      } else {
-        setshow(false);
-      }
-    };
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
 
   return (
     <div>
@@ -261,7 +224,14 @@ export default function App() {
         }}> 
 
         <ButtonContainer>
-          <Button2 theme="orange" onClick={() => openJobModal({
+          <Button2 
+          theme="orange"
+          customStyles={{
+            marginLeft: '4%',
+            marginRight: '0%',
+            marginBottom: '2.5%',
+          }}
+            onClick={() => openJobModal({
             company: 'Town of Oakville',
             position: 'Lawn Cutter',
             years: 'Jan 2023 - Sept 2023',
@@ -272,7 +242,13 @@ export default function App() {
             <span className="years">Jan 2023 - Sept 2023</span>
           </Button2>
   
-          <Button2 theme="orange" onClick={() => openJobModal({
+          <Button2 theme="orange" 
+          customStyles={{
+            marginLeft: '0%',
+            marginRight: '4%',
+            marginBottom: '2.5%',
+          }}
+          onClick={() => openJobModal({
             company: 'Local Student',
             position: 'Landscaper',
             years: 'Sept 2022 - Nov 2022',
@@ -283,7 +259,13 @@ export default function App() {
             <span className="years">Sept 2022 - Nov 2022</span>
           </Button2>
   
-          <Button2 theme="orange" onClick={() => openJobModal({
+          <Button2 theme="orange" 
+          customStyles={{
+            marginLeft: '4%',
+            marginRight: '0%',
+            marginBottom: '0%',
+          }}
+          onClick={() => openJobModal({
             company: 'Digital Fire',
             position: 'IT Consultant',
             years: 'Jan 2021 - June 2021',
@@ -294,7 +276,13 @@ export default function App() {
             <span className="years">Jan 2021 - June 2021</span>
           </Button2>
   
-          <Button2 theme="orange" onClick={() => openJobModal({
+          <Button2 theme="orange" 
+          customStyles={{
+            marginLeft: '0%',
+            marginRight: '4%',
+            marginBottom: '0%',
+          }}
+          onClick={() => openJobModal({
             company: 'Sobeys',
             position: 'Cashier',
             years: 'Aug 2020 - Dec 2020',
