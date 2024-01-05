@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import JobModal from './JobModal';
 import githubLogo from './assets/github.png';
@@ -102,14 +102,14 @@ const Button2 = styled.button`
   @media (min-width: 768px) {
     width: 33vw; /* Adjust the width for larger screens to form a 2x2 grid */
     font-size: 2vw; /* Adjust the font-size for larger screens */
-    padding: 11vh; /* Adjust the vertical padding for increased height on larger screens */
+    height: 27vh; /* Adjust the vertical padding for increased height on larger screens */
 
   }
 
   @media (max-width: 768px) {
     width: 100%; /* Take full width on smaller screens to stack vertically */
     margin: 10px; /* Default spacing between buttons on smaller screens */
-    font-size: 1.2vw; /* Adjust the font-size for smaller screens */
+    font-size: 2.0vw; /* Adjust the font-size for smaller screens */
     padding: 5vh 15%; /* Adjust the vertical padding for increased height on smaller screens */
   }
 `;
@@ -155,7 +155,6 @@ export default function App() {
   const scrollHandler = (elmRef) => {
     window.scrollTo({ top: elmRef.current.offsetTop, behavior: "smooth" });
   };
-
 
 
   return (
@@ -230,6 +229,7 @@ export default function App() {
             marginLeft: '4%',
             marginRight: '0%',
             marginBottom: '2.5%',
+
           }}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
@@ -292,6 +292,25 @@ export default function App() {
             <span className="position">Cashier</span>
             <span className="years">Aug 2020 - Dec 2020</span>
           </Button2>
+
+          <Button2 theme="orange" 
+          customStyles={{
+            marginLeft: '28%',
+            marginRight: '0%',
+            marginBottom: '0%',
+            marginTop: '2.5%',
+
+          }}
+          onClick={() => openJobModal({
+            company: 'Sobeys',
+            position: 'Cashier',
+            years: 'Aug 2020 - Dec 2020',
+            duties: 'among us'
+          })}>
+            <span className="company">Sobeys</span>
+            <span className="position">Cashier</span>
+            <span className="years">Aug 2020 - Dec 2020</span>
+          </Button2>        
         </ButtonContainer>
 
         <JobModal isOpen={jobModalOpen} onClose={closeJobModal} jobInfo={selectedJob} />
@@ -306,7 +325,31 @@ export default function App() {
           background: "purple",
           ...center,
         }}
-      >Projects</div>
+      >
+        <ButtonContainer>
+          <Button2 
+          theme="orange"
+          customStyles={{
+            marginLeft: '0%',
+            marginRight: '0%',
+            marginBottom: '0%',
+          }}
+            onClick={() => openJobModal({
+            company: 'Town of Oakville',
+            position: 'Lawn Cutter',
+            years: 'Jan 2023 - Sept 2023',
+            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. I hat. The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+          })}>
+            <span className="company">Town of Oakville</span>
+            <span className="position">Lawn Cutter</span>
+            <span className="years">Jan 2023 - Sept 2023</span>
+          </Button2>
+        </ButtonContainer>
+
+
+
+
+      </div>
 
       <div 
         ref={section4}
