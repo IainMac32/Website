@@ -5,6 +5,7 @@ import JobModal from './JobModal';
 import githubLogo from './assets/github.png';
 import linkedinLogo from './assets/linkedinLogo.png';
 import IainPhoto from './assets/IainPhoto.png';
+import './App.css';  // Move this import to the top
 
 
 
@@ -92,7 +93,7 @@ const Button2 = styled.button`
   ${(props) => props.customStyles}
 
   @media (min-width: 768px) {
-    width: 33vw; /* Adjust the width for larger screens to form a 2x2 grid */
+    width: 31vw; /* Adjust the width for larger screens to form a 2x2 grid */
     font-size: 4.5vh; /* Adjust the font-size for larger screens */
     height: 26vh; /* Adjust the vertical padding for increased height on larger screens */
 
@@ -134,6 +135,13 @@ const Button3 = styled.button`
 
   .language {
     font-weight: bold;
+    display: flex;
+    align-items: center; // Align items vertically in the flex container
+
+    .image {
+      margin-right: 10px; // Adjust spacing between image and text
+      max-width: 20px; // Set a max-width for the image
+    }
   }
 
   .years {
@@ -147,7 +155,7 @@ const Button3 = styled.button`
   @media (min-width: 768px) {
     width: 20vw; /* Adjust the width for larger screens to form a 2x2 grid */
     font-size: 2vh; /* Adjust the font-size for larger screens */
-    height: 27vh; /* Adjust the vertical padding for increased height on larger screens */
+    height: 25.8vh; /* Adjust the vertical padding for increased height on larger screens */
   }
 
   @media (max-width: 768px) {
@@ -179,6 +187,23 @@ const center = {
   fontSize: 30,
   marginLeft: "25%",
 };
+
+const HiText = styled.span`
+  font-size: 2vw;
+  font-weight: bold;
+  display: inline-block;
+  animation: colorChange 15s infinite linear;
+  
+  @keyframes colorChange {
+    0% {color: violet;}
+    14.28% {color: indigo;}
+    28.56% {color: blue;}
+    42.84% {color: green;}
+    57.12% {color: yellow;}
+    71.4% {color: orange;}
+    85.68% {color: red;}
+    100% {color: violet;}
+  }`;
 
 export default function App() {
 
@@ -229,7 +254,38 @@ export default function App() {
     window.scrollTo({ top: elmRef.current.offsetTop, behavior: "smooth" });
   };
 
-  
+  const BoldOutlineText = styled.span`
+    font-weight: bold;
+    text-shadow: 0 0 3px white; 
+  `;
+
+  const StyledParagraph = styled.p`
+  text-align: left;
+
+  margin-right: 7%;
+
+  @media (min-width: 768px) {
+    font-size: 1.6vw;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 3.0vw;
+  }
+`;
+
+const StyledH1 = styled.h1`
+  margin-top: 0.5%;
+  margin-bottom: 1.2vh;
+  font-size: 3.6vw;
+  text-shadow: 0 0 20px white;
+  color: black;
+
+  @media (max-width: 768px) {
+    font-size: 10vw;
+    margin-top: 5.0%;
+
+  }
+`;
 
 
   return (
@@ -258,7 +314,7 @@ export default function App() {
           <Button
             style={{
               transform: `translateX(${(scrollPosition > window.innerHeight * -0.5 &&
-              scrollPosition <= window.innerHeight * 0.5) || isButtonHovered1 ? '1vw': '0'})`,
+                scrollPosition <= window.innerHeight * 0.5) || isButtonHovered1 ? '1vw': '0'})`,
               backgroundColor: (scrollPosition > window.innerHeight * -0.5 &&
                 scrollPosition <= window.innerHeight * 0.5) || isButtonHovered1 ? '#283593' : '#3f51b5',
           
@@ -272,7 +328,7 @@ export default function App() {
           <Button
             style={{
               transform: `translateX(${(scrollPosition > window.innerHeight * 0.5 &&
-              scrollPosition <= window.innerHeight * 1.5) || isButtonHovered2 ? '1vw': '0'})`,
+                scrollPosition <= window.innerHeight * 1.5) || isButtonHovered2 ? '1vw': '0'})`,
               backgroundColor: (scrollPosition > window.innerHeight * 0.5 &&
                 scrollPosition <= window.innerHeight * 1.5) || isButtonHovered2 ? '#283593' : '#3f51b5',
 
@@ -285,7 +341,7 @@ export default function App() {
           <Button
             style={{
               transform: `translateX(${(scrollPosition > window.innerHeight * 1.5 &&
-              scrollPosition <= window.innerHeight * 2.5) || isButtonHovered3 ? '1vw': '0'})`,
+                scrollPosition <= window.innerHeight * 2.5) || isButtonHovered3 ? '1vw': '0'})`,
               backgroundColor: (scrollPosition > window.innerHeight * 1.5 &&
                 scrollPosition <= window.innerHeight * 2.5) || isButtonHovered3 ? '#283593' : '#3f51b5',
 
@@ -299,7 +355,7 @@ export default function App() {
           <Button
             style={{
               transform: `translateX(${(scrollPosition > window.innerHeight * 2.5 &&
-              scrollPosition <= window.innerHeight * 4) || isButtonHovered4 ? '1vw': '0'})`,
+                scrollPosition <= window.innerHeight * 4) || isButtonHovered4 ? '1vw': '0'})`,
               backgroundColor: (scrollPosition > window.innerHeight * 2.5 &&
                 scrollPosition <= window.innerHeight * 4) || isButtonHovered4 ? '#283593' : '#3f51b5',
 
@@ -333,27 +389,34 @@ export default function App() {
         </ul>
       </header>
 
+
       <div
         ref={section1}
         style={{
           background: "rgb(100,100,255)",
           ...center,
           flexDirection: "row", // Set flex direction to column
+
           alignItems: "center", // Center items horizontally
           justifyContent: "center", // Center items vertically
+          
         }}>
-        <img
-          src={IainPhoto}
-          alt="Iain"
-          style={{
-            width: "30%", // Adjust the width as needed
-            height: "auto",
-            borderRadius: "0%", // Make the image circular if desired
-            marginLeft: "7%",
-          }}/>
-        <p style={{ textAlign: "left", marginTop: "2%", marginRight: "7%", fontSize: "1.5vw" }}>
-        I am an inquisitive, diligent, and hard-working first-year computer science student at McMaster University. My aspiration is to pursue acareer in the tech industry as a developer, and I am currently seeking a <strong>Summer co-op placement lasting 4 months</strong>. With a strong foundation in computer science principles and a passion for problem-solving, I am eager to apply my analytical and collaborative skills to a dynamic work environment.
-        </p>
+              <img
+              src={IainPhoto}
+              alt="Iain"
+              style={{
+                width: "30%", // Adjust the width as needed
+                height: "auto",
+                borderRadius: "0%", // Make the image circular if desired
+                marginLeft: "7%",
+              }}/>
+
+            <StyledParagraph>
+              <p style={{ textAlign: "left", marginTop: "2%", marginRight: "7%",}}>
+                <HiText>Hi!</HiText> I'm Iain Macdonald an inquisitive, diligent, and hard-working first-year computer science student at McMaster University. My aspiration is to pursue acareer in the tech industry as a developer, and I am currently <BoldOutlineText>seeking a Summer co-op placement lasting 4 months</BoldOutlineText>. With a strong foundation in computer science principles and a passion for problem-solving, I am eager to apply my analytical and collaborative skills to a dynamic work environment.
+              </p>
+            </StyledParagraph>
+
       </div>
         
 
@@ -367,19 +430,15 @@ export default function App() {
           justifyContent: "flex-start", // Align items at the start of the container (top)
       
         }}> 
-          <h1 style={{ 
-            marginTop: 0, 
-            marginBottom: "1vh",
-            fontSize: "8vh",
+          <StyledH1>Experience</StyledH1>
 
-            }}>Experience</h1>
 
 
         <ButtonContainer>
           <Button2 
           theme="orange"
           customStyles={{
-            marginLeft: '3vw',
+            marginLeft: '5.0vw',
             marginRight: '0%',
             marginBottom: '2.5%',
 
@@ -398,7 +457,7 @@ export default function App() {
           <Button2 theme="orange" 
           customStyles={{
             marginLeft: '0%',
-            marginRight: '4%',
+            marginRight: '5.0vw',
             marginBottom: '2.5%',
           }}
           onClick={() => openJobModal({
@@ -414,7 +473,7 @@ export default function App() {
   
           <Button2 theme="orange" 
           customStyles={{
-            marginLeft: '4%',
+            marginLeft: '5vw',
             marginRight: '0%',
             marginBottom: '0%',
           }}
@@ -432,7 +491,7 @@ export default function App() {
           <Button2 theme="orange" 
           customStyles={{
             marginLeft: '0%',
-            marginRight: '4%',
+            marginRight: '5vw',
             marginBottom: '0%',
           }}
           onClick={() => openJobModal({
@@ -448,7 +507,7 @@ export default function App() {
 
           <Button2 theme="orange" 
           customStyles={{
-            marginLeft: '28%',
+            marginLeft: '29%',
             marginRight: '0%',
             marginBottom: '0%',
             marginTop: '2.5%',
@@ -480,16 +539,8 @@ export default function App() {
           flexDirection: "column", // Set flex direction to column
           alignItems: "center", // Center items horizontally
           justifyContent: "flex-start", // Align items at the start of the container (top)
-
-        }}
-      >
-
-          <h1 style={{ 
-            marginTop: 0, 
-            marginBottom: "1vh",
-            fontSize: "8vh",
-
-            }}>Projects</h1>
+        }}>
+        <StyledH1>Projects</StyledH1>
 
         <ButtonContainer>
           <Button2 
@@ -498,7 +549,7 @@ export default function App() {
             marginLeft: '0%',
             marginRight: '0%',
             marginBottom: '0%',
-            marginTop: '25vh',
+            marginTop: '15vh',
           }}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
@@ -546,7 +597,10 @@ export default function App() {
             years: 'Jan 2023 - Sept 2023',
             duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
           })}>
-            <span className="language">Town of Oakville</span>
+              <span className="language">
+                <img src={require('./assets/python.png')} alt="PythonLogo" className="image" />
+                Pyth
+              </span>
             <span className="years">Jan 2023 - Sept 2023</span>
           </Button3>
   
@@ -652,4 +706,4 @@ export default function App() {
 
     </div>
   );
-}
+};
