@@ -136,6 +136,31 @@ export default function App() {
 
   const [jobModalOpen, setJobModalOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState({});
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+
+
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+  const [isButtonHovered1, setIsButtonHovered1] = useState(false);
+  const [isButtonHovered2, setIsButtonHovered2] = useState(false);
+  const [isButtonHovered3, setIsButtonHovered3] = useState(false);
+  const [isButtonHovered4, setIsButtonHovered4] = useState(false);
+
+
+
+
 
   const openJobModal = (jobInfo) => {
     setSelectedJob(jobInfo);
@@ -155,6 +180,8 @@ export default function App() {
   const scrollHandler = (elmRef) => {
     window.scrollTo({ top: elmRef.current.offsetTop, behavior: "smooth" });
   };
+
+  
 
 
   return (
@@ -178,10 +205,47 @@ export default function App() {
             color: "white",
           }}>Iain Macdonald</h1>
           
-          <Button onClick={() => scrollHandler(section1)}>About</Button>
-          <Button onClick={() => scrollHandler(section2)}>Experience</Button>
-          <Button onClick={() => scrollHandler(section3)}>Projects</Button>
-          <Button onClick={() => scrollHandler(section4)}>Skills</Button>
+          <Button
+            style={{
+              transform: `translateX(${(scrollPosition > window.innerHeight * -0.5 &&
+              scrollPosition <= window.innerHeight * 0.5) || isButtonHovered1 ? '1vw': '0'})`,
+                  }}
+            onClick={() => scrollHandler(section1)}
+            onMouseEnter={() => setIsButtonHovered1(true)} 
+            onMouseLeave={() => setIsButtonHovered1(false)} 
+          >about </Button>
+
+          
+          <Button
+            style={{
+              transform: `translateX(${(scrollPosition > window.innerHeight * 0.5 &&
+              scrollPosition <= window.innerHeight * 1.5) || isButtonHovered2 ? '1vw': '0'})`,
+                  }}
+            onClick={() => scrollHandler(section2)}
+            onMouseEnter={() => setIsButtonHovered2(true)} 
+            onMouseLeave={() => setIsButtonHovered2(false)} 
+          >experience </Button>
+
+          <Button
+            style={{
+              transform: `translateX(${(scrollPosition > window.innerHeight * 1.5 &&
+              scrollPosition <= window.innerHeight * 2.5) || isButtonHovered3 ? '1vw': '0'})`,
+                  }}
+            onClick={() => scrollHandler(section3)}
+            onMouseEnter={() => setIsButtonHovered3(true)} 
+            onMouseLeave={() => setIsButtonHovered3(false)} 
+          >Projects </Button>
+          
+
+          <Button
+            style={{
+              transform: `translateX(${(scrollPosition > window.innerHeight * 2.5 &&
+              scrollPosition <= window.innerHeight * 4) || isButtonHovered4 ? '1vw': '0'})`,
+                  }}
+            onClick={() => scrollHandler(section4)}
+            onMouseEnter={() => setIsButtonHovered4(true)}
+            onMouseLeave={() => setIsButtonHovered4(false)}
+          >Skills </Button>
 
           <div style={{ display: "flex", alignItems: "center" }}>
             <a href="https://github.com/IainMac32" target="_blank" rel="noopener noreferrer">
@@ -235,7 +299,7 @@ export default function App() {
             company: 'Town of Oakville',
             position: 'Lawn Cutter',
             years: 'Jan 2023 - Sept 2023',
-            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. I hat. The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
           })}>
             <span className="company">Town of Oakville</span>
             <span className="position">Lawn Cutter</span>

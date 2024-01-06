@@ -59,13 +59,20 @@ const JobModal = ({ isOpen, onClose, jobInfo }) => {
     return null;
   }
 
+  // Split duties based on double newline and filter out empty strings
+  const dutiesList = jobInfo.duties.split('\n\n').filter((duty) => duty.trim() !== '');
+
   return (
     <ModalWrapper>
       <CloseButton onClick={onClose}>X</CloseButton>
       <h2>{jobInfo.company}</h2>
       <p>{jobInfo.position}</p>
       <p>{jobInfo.years}</p>
-      <p>{jobInfo.duties}</p>
+      <ul>
+        {dutiesList.map((duty, index) => (
+          <li key={index}>{duty.trim()}</li>
+        ))}
+      </ul>
     </ModalWrapper>
   );
 };
