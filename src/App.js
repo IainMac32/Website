@@ -35,19 +35,10 @@ const Button = styled.button`
   justify-content: center;
   align-items: center;
 
-
-  &:hover {
-    background-color: ${(props) => theme[props.theme].hover};
-    transform: translateX(1vw);
-  }
-
   &:active {
-    background-color: white; /* Change background color when pressed */
-    color: #283593; /* Change text color when pressed */
+    color: black; /* Change text color when pressed */
   }
 `;
-
-
 
 const ButtonContainer = styled.div`
   display: flex;
@@ -81,7 +72,6 @@ const Button2 = styled.button`
     transform: scale(1.03);
   }
 
-  /* Additional styles for employment information */
   .company {
     font-weight: bold;
   }
@@ -113,6 +103,62 @@ const Button2 = styled.button`
     padding: 5vh 15%; /* Adjust the vertical padding for increased height on smaller screens */
   }
 `;
+
+
+
+
+const Button3 = styled.button`
+  box-sizing: border-box;
+  position: relative;
+  position: relative;
+  background-color: ${(props) => theme[props.theme].default};
+  color: white;
+  border-radius: 15px;
+  outline: 0;
+  cursor: pointer;
+  border-style:none;
+  border: 3px solid black; /* Add a black border */
+  transition: ease background-color 250ms, ease transform 250ms;
+  display: flex;
+  flex-direction: column; /* To display company and years vertically */
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap; /* Prevents wrapping to new lines */
+
+  &:hover {
+    background-color: ${(props) => theme[props.theme].hover};
+    transform: scale(1.03);
+  }
+
+  .language {
+    font-weight: bold;
+  }
+
+  .years {
+    font-size: 1em; /* Adjust the font-size for employment years */
+    margin-top: 0.2em;
+  }
+
+  box-sizing: border-box; 
+  ${(props) => props.customStyles}
+
+  @media (min-width: 768px) {
+    width: 13vw; /* Adjust the width for larger screens to form a 2x2 grid */
+    font-size: 2vw; /* Adjust the font-size for larger screens */
+    height: 27vh; /* Adjust the vertical padding for increased height on larger screens */
+  }
+
+  @media (max-width: 768px) {
+    width: 100%; /* Take full width on smaller screens to stack vertically */
+    margin: 10px; /* Default spacing between buttons on smaller screens */
+    font-size: 2.0vw; /* Adjust the font-size for smaller screens */
+    padding: 5vh 15%; /* Adjust the vertical padding for increased height on smaller screens */
+  }
+`;
+
+
+
+
 
 
 
@@ -209,6 +255,9 @@ export default function App() {
             style={{
               transform: `translateX(${(scrollPosition > window.innerHeight * -0.5 &&
               scrollPosition <= window.innerHeight * 0.5) || isButtonHovered1 ? '1vw': '0'})`,
+              backgroundColor: (scrollPosition > window.innerHeight * -0.5 &&
+                scrollPosition <= window.innerHeight * 0.5) || isButtonHovered1 ? '#283593' : '#3f51b5',
+          
                   }}
             onClick={() => scrollHandler(section1)}
             onMouseEnter={() => setIsButtonHovered1(true)} 
@@ -220,6 +269,9 @@ export default function App() {
             style={{
               transform: `translateX(${(scrollPosition > window.innerHeight * 0.5 &&
               scrollPosition <= window.innerHeight * 1.5) || isButtonHovered2 ? '1vw': '0'})`,
+              backgroundColor: (scrollPosition > window.innerHeight * 0.5 &&
+                scrollPosition <= window.innerHeight * 1.5) || isButtonHovered2 ? '#283593' : '#3f51b5',
+
                   }}
             onClick={() => scrollHandler(section2)}
             onMouseEnter={() => setIsButtonHovered2(true)} 
@@ -230,6 +282,9 @@ export default function App() {
             style={{
               transform: `translateX(${(scrollPosition > window.innerHeight * 1.5 &&
               scrollPosition <= window.innerHeight * 2.5) || isButtonHovered3 ? '1vw': '0'})`,
+              backgroundColor: (scrollPosition > window.innerHeight * 1.5 &&
+                scrollPosition <= window.innerHeight * 2.5) || isButtonHovered3 ? '#283593' : '#3f51b5',
+
                   }}
             onClick={() => scrollHandler(section3)}
             onMouseEnter={() => setIsButtonHovered3(true)} 
@@ -241,6 +296,9 @@ export default function App() {
             style={{
               transform: `translateX(${(scrollPosition > window.innerHeight * 2.5 &&
               scrollPosition <= window.innerHeight * 4) || isButtonHovered4 ? '1vw': '0'})`,
+              backgroundColor: (scrollPosition > window.innerHeight * 2.5 &&
+                scrollPosition <= window.innerHeight * 4) || isButtonHovered4 ? '#283593' : '#3f51b5',
+
                   }}
             onClick={() => scrollHandler(section4)}
             onMouseEnter={() => setIsButtonHovered4(true)}
@@ -415,13 +473,93 @@ export default function App() {
 
       </div>
 
+
       <div 
-        ref={section4}
+        ref={section4} 
         style={{
-          background: "orange",
+          background: "green",
           ...center,
-        }}
-      >Skills</div>
+        }}> 
+
+        <ButtonContainer>
+          <Button3 
+          theme="orange"
+          customStyles={{
+            marginLeft: '4%',
+            marginRight: '0%',
+            marginBottom: '2.5%',
+
+          }}
+            onClick={() => openJobModal({
+            company: 'Town of Oakville',
+            position: 'Lawn Cutter',
+            years: 'Jan 2023 - Sept 2023',
+            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+          })}>
+            <span className="language">Town of Oakville</span>
+            <span className="years">Jan 2023 - Sept 2023</span>
+          </Button3>
+  
+          <Button3 
+          theme="orange"
+          customStyles={{marginLeft: '0%',marginRight: '4%',marginBottom: '2.5%',}}
+            onClick={() => openJobModal({
+            company: 'Town of Oakville',
+            position: 'Lawn Cutter',
+            years: 'Jan 2023 - Sept 2023',
+            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+          })}>
+            <span className="language">Town of Oakville</span>
+            <span className="years">Jan 2023 - Sept 2023</span>
+          </Button3>
+
+  
+          <Button3 
+          theme="orange"
+          customStyles={{marginLeft: '4%',marginRight: '0%',marginBottom: '0%',}}
+            onClick={() => openJobModal({
+            company: 'Town of Oakville',
+            position: 'Lawn Cutter',
+            years: 'Jan 2023 - Sept 2023',
+            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+          })}>
+            <span className="language">Town of Oakville</span>
+            <span className="years">Jan 2023 - Sept 2023</span>
+          </Button3>
+  
+          <Button3 
+          theme="orange"
+          customStyles={{marginLeft: '0%',marginRight: '4%',marginBottom: '2.5%',}}
+            onClick={() => openJobModal({
+            company: 'Town of Oakville',
+            position: 'Lawn Cutter',
+            years: 'Jan 2023 - Sept 2023',
+            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+          })}>
+            <span className="language">Town of Oakville</span>
+            <span className="years">Jan 2023 - Sept 2023</span>
+          </Button3>
+
+          <Button3 
+          theme="orange"
+          customStyles={{marginLeft: '4%',marginRight: '0%',marginBottom: '0%',}}
+            onClick={() => openJobModal({
+            company: 'Town of Oakville',
+            position: 'Lawn Cutter',
+            years: 'Jan 2023 - Sept 2023',
+            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+          })}>
+            <span className="language">Town of Oakville</span>
+            <span className="years">Jan 2023 - Sept 2023</span>
+          </Button3>
+
+
+        </ButtonContainer>
+
+
+
+        
+      </div>
 
     </div>
   );
