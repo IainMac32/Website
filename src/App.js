@@ -4,6 +4,8 @@ import styled from "styled-components";
 import JobModal from './JobModal';
 import githubLogo from './assets/github.png';
 import linkedinLogo from './assets/linkedinLogo.png';
+import IainPhoto from './assets/IainPhoto.png';
+
 
 
 const theme = {
@@ -91,8 +93,8 @@ const Button2 = styled.button`
 
   @media (min-width: 768px) {
     width: 33vw; /* Adjust the width for larger screens to form a 2x2 grid */
-    font-size: 2vw; /* Adjust the font-size for larger screens */
-    height: 27vh; /* Adjust the vertical padding for increased height on larger screens */
+    font-size: 4.5vh; /* Adjust the font-size for larger screens */
+    height: 26vh; /* Adjust the vertical padding for increased height on larger screens */
 
   }
 
@@ -143,8 +145,8 @@ const Button3 = styled.button`
   ${(props) => props.customStyles}
 
   @media (min-width: 768px) {
-    width: 13vw; /* Adjust the width for larger screens to form a 2x2 grid */
-    font-size: 2vw; /* Adjust the font-size for larger screens */
+    width: 20vw; /* Adjust the width for larger screens to form a 2x2 grid */
+    font-size: 2vh; /* Adjust the font-size for larger screens */
     height: 27vh; /* Adjust the vertical padding for increased height on larger screens */
   }
 
@@ -249,6 +251,8 @@ export default function App() {
           <h1 style={{
             fontSize: "2.5vw",
             color: "white",
+            marginTop: "5%",
+            marginBottom: "5%",
           }}>Iain Macdonald</h1>
           
           <Button
@@ -329,26 +333,53 @@ export default function App() {
         </ul>
       </header>
 
-      <div 
+      <div
         ref={section1}
         style={{
-          background: "red",
+          background: "rgb(100,100,255)",
           ...center,
-        }}
-      >About</div>
+          flexDirection: "row", // Set flex direction to column
+          alignItems: "center", // Center items horizontally
+          justifyContent: "center", // Center items vertically
+        }}>
+        <img
+          src={IainPhoto}
+          alt="Iain"
+          style={{
+            width: "30%", // Adjust the width as needed
+            height: "auto",
+            borderRadius: "0%", // Make the image circular if desired
+            marginLeft: "7%",
+          }}/>
+        <p style={{ textAlign: "left", marginTop: "2%", marginRight: "7%", fontSize: "1.5vw" }}>
+        I am an inquisitive, diligent, and hard-working first-year computer science student at McMaster University. My aspiration is to pursue acareer in the tech industry as a developer, and I am currently seeking a <strong>Summer co-op placement lasting 4 months</strong>. With a strong foundation in computer science principles and a passion for problem-solving, I am eager to apply my analytical and collaborative skills to a dynamic work environment.
+        </p>
+      </div>
+        
 
       <div 
         ref={section2} 
         style={{
-          background: "green",
+          background: "rgb(55,55,255)",
           ...center,
+          flexDirection: "column", // Set flex direction to column
+          alignItems: "center", // Center items horizontally
+          justifyContent: "flex-start", // Align items at the start of the container (top)
+      
         }}> 
+          <h1 style={{ 
+            marginTop: 0, 
+            marginBottom: "1vh",
+            fontSize: "8vh",
+
+            }}>Experience</h1>
+
 
         <ButtonContainer>
           <Button2 
           theme="orange"
           customStyles={{
-            marginLeft: '4%',
+            marginLeft: '3vw',
             marginRight: '0%',
             marginBottom: '2.5%',
 
@@ -444,10 +475,22 @@ export default function App() {
       <div 
         ref={section3}
         style={{
-          background: "purple",
+          background: "rgb(100,100,255)",
           ...center,
+          flexDirection: "column", // Set flex direction to column
+          alignItems: "center", // Center items horizontally
+          justifyContent: "flex-start", // Align items at the start of the container (top)
+
         }}
       >
+
+          <h1 style={{ 
+            marginTop: 0, 
+            marginBottom: "1vh",
+            fontSize: "8vh",
+
+            }}>Projects</h1>
+
         <ButtonContainer>
           <Button2 
           theme="orange"
@@ -455,6 +498,7 @@ export default function App() {
             marginLeft: '0%',
             marginRight: '0%',
             marginBottom: '0%',
+            marginTop: '25vh',
           }}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
@@ -477,19 +521,25 @@ export default function App() {
       <div 
         ref={section4} 
         style={{
-          background: "green",
+          background: "rgb(55,55,255)",
           ...center,
+          flexDirection: "column", // Set flex direction to column
+          alignItems: "center", // Center items horizontally
+          justifyContent: "flex-start", // Align items at the start of the container (top)
+
         }}> 
 
+          <h1 style={{ 
+            marginTop: 0, 
+            marginBottom: "1vh",
+            fontSize: "8vh",
+
+            }}>Skills</h1>
+
         <ButtonContainer>
-          <Button3 
+        <Button3 
           theme="orange"
-          customStyles={{
-            marginLeft: '4%',
-            marginRight: '0%',
-            marginBottom: '2.5%',
-
-          }}
+          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
             position: 'Lawn Cutter',
@@ -502,7 +552,7 @@ export default function App() {
   
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '0%',marginRight: '4%',marginBottom: '2.5%',}}
+          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
             position: 'Lawn Cutter',
@@ -516,7 +566,7 @@ export default function App() {
   
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '4%',marginRight: '0%',marginBottom: '0%',}}
+          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
             position: 'Lawn Cutter',
@@ -529,7 +579,7 @@ export default function App() {
   
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '0%',marginRight: '4%',marginBottom: '2.5%',}}
+          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
             position: 'Lawn Cutter',
@@ -542,7 +592,46 @@ export default function App() {
 
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '4%',marginRight: '0%',marginBottom: '0%',}}
+          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
+            onClick={() => openJobModal({
+            company: 'Town of Oakville',
+            position: 'Lawn Cutter',
+            years: 'Jan 2023 - Sept 2023',
+            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+          })}>
+            <span className="language">Town of Oakville</span>
+            <span className="years">Jan 2023 - Sept 2023</span>
+          </Button3>
+
+          <Button3 
+          theme="orange"
+          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
+            onClick={() => openJobModal({
+            company: 'Town of Oakville',
+            position: 'Lawn Cutter',
+            years: 'Jan 2023 - Sept 2023',
+            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+          })}>
+            <span className="language">Town of Oakville</span>
+            <span className="years">Jan 2023 - Sept 2023</span>
+          </Button3>
+
+          <Button3 
+          theme="orange"
+          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
+            onClick={() => openJobModal({
+            company: 'Town of Oakville',
+            position: 'Lawn Cutter',
+            years: 'Jan 2023 - Sept 2023',
+            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+          })}>
+            <span className="language">Town of Oakville</span>
+            <span className="years">Jan 2023 - Sept 2023</span>
+          </Button3>
+
+          <Button3 
+          theme="orange"
+          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
             position: 'Lawn Cutter',
