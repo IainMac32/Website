@@ -94,7 +94,7 @@ const Button2 = styled.button`
 
   @media (min-width: 768px) {
     width: 31vw; /* Adjust the width for larger screens to form a 2x2 grid */
-    font-size: 4.5vh; /* Adjust the font-size for larger screens */
+    font-size: 4.0vh; /* Adjust the font-size for larger screens */
     height: 26vh; /* Adjust the vertical padding for increased height on larger screens */
 
   }
@@ -140,7 +140,8 @@ const Button3 = styled.button`
 
     .image {
       margin-right: 10px; // Adjust spacing between image and text
-      max-width: 20px; // Set a max-width for the image
+      max-width: 5vh; // Set a max-width for the image
+      border-radius: 5px;
     }
   }
 
@@ -154,7 +155,7 @@ const Button3 = styled.button`
 
   @media (min-width: 768px) {
     width: 20vw; /* Adjust the width for larger screens to form a 2x2 grid */
-    font-size: 2vh; /* Adjust the font-size for larger screens */
+    font-size: 3.2vh; /* Adjust the font-size for larger screens */
     height: 25.8vh; /* Adjust the vertical padding for increased height on larger screens */
   }
 
@@ -302,7 +303,7 @@ const StyledH1 = styled.h1`
           padding: 0,
           justifyContent: "space-evenly",
           position: "fixed",
-          background: "darkblue",
+          background: "rgb(40,40,255)",
         }}>
           <h1 style={{
             fontSize: "2.5vw",
@@ -393,7 +394,7 @@ const StyledH1 = styled.h1`
       <div
         ref={section1}
         style={{
-          background: "rgb(100,100,255)",
+          background: "rgb(80,80,255)",
           ...center,
           flexDirection: "row", // Set flex direction to column
 
@@ -423,7 +424,7 @@ const StyledH1 = styled.h1`
       <div 
         ref={section2} 
         style={{
-          background: "rgb(55,55,255)",
+          background: "rgb(110,110,255)",
           ...center,
           flexDirection: "column", // Set flex direction to column
           alignItems: "center", // Center items horizontally
@@ -444,14 +445,14 @@ const StyledH1 = styled.h1`
 
           }}
             onClick={() => openJobModal({
-            company: 'Town of Oakville',
-            position: 'Lawn Cutter',
-            years: 'Jan 2023 - Sept 2023',
-            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+            company: 'Mac AI',
+            position: 'Software Developer',
+            years: 'Oct 2023 - Present',
+            duties: 'Developing an innovative Python application that involves vectorizing different types of inputted documents, storing them in adatabase, and leveraging GPT-3.5 to provide accurate answers to user-generated questions.\n\nUtilizing advanced technologies, including LLM, Vectorization, Vector Database, and Similarity Search through API integration.\n\nCollaborating seamlessly within a team of 7 through GitHub, actively contributing to open communication while engaging indiscussions about design ideas during weekly meetings and daily reporting.'
           })}>
-            <span className="company">Town of Oakville</span>
-            <span className="position">Lawn Cutter</span>
-            <span className="years">Jan 2023 - Sept 2023</span>
+            <span className="company">Mac AI</span>
+            <span className="position">Software Developer</span>
+            <span className="years">Oct 2023 - Present</span>
           </Button2>
   
           <Button2 theme="orange" 
@@ -461,14 +462,14 @@ const StyledH1 = styled.h1`
             marginBottom: '2.5%',
           }}
           onClick={() => openJobModal({
-            company: 'Local Student',
-            position: 'Landscaper',
-            years: 'Sept 2022 - Nov 2022',
-            duties: 'blah blah'
+            company: 'Town of Oakville',
+            position: 'General Labourer',
+            years: 'May 2023 - Aug 2023',
+            duties: 'Operated heavy machinery, including lawnmowers and trimmers, to thoroughly cut and trim public parks and trails.\n\nDemonstrated leadership by taking charge during periods of low activity, ensuring tasks were organized and completed properly.'
           })}>
-            <span className="company">Local Student</span>
-            <span className="position">Landscaper</span>
-            <span className="years">Sept 2022 - Nov 2022</span>
+            <span className="company">Town of Oakville</span>
+            <span className="position">General Labourer</span>
+            <span className="years">May 2023 - Aug 2023</span>
           </Button2>
   
           <Button2 theme="orange" 
@@ -478,14 +479,14 @@ const StyledH1 = styled.h1`
             marginBottom: '0%',
           }}
           onClick={() => openJobModal({
-            company: 'Digital Fire',
-            position: 'IT Consultant',
-            years: 'Jan 2021 - June 2021',
-            duties: 'yo'
-          })}>
-            <span className="company">Digital Fire</span>
-            <span className="position">IT Consultant</span>
-            <span className="years">Jan 2021 - June 2021</span>
+            company: 'LocalStudent.com',
+            position: 'Landscaper',
+            years: 'Jul 2022 - Sep 2022',
+            duties: 'Mowed/Trimmed lawns.\n\nWeeded gardens'
+           })}>
+            <span className="company">LocalStudent.com</span>
+            <span className="position">Landscaper</span>
+            <span className="years">Jul 2022 - Sep 2022</span>
           </Button2>
   
           <Button2 theme="orange" 
@@ -495,14 +496,14 @@ const StyledH1 = styled.h1`
             marginBottom: '0%',
           }}
           onClick={() => openJobModal({
-            company: 'Sobeys',
-            position: 'Cashier',
-            years: 'Aug 2020 - Dec 2020',
-            duties: 'among us'
+            company: 'Digital Fire',
+            position: 'IT Co-op Placement',
+            years: 'Feb 2022 - Jun 2022',
+            duties: 'Applied technical skills with precision to efficiently set up, configure, and upgrade laptops and desktops, seamlessly integratinghardware and software components to ensure optimal system performance and long-term reliability.\n\nAcquired coding proficiency to develop an office inventory system, resulting in improved organization and operational efficiency.\n\nPlayed a key role in important projects by working on hardware construction, and enhancing overall technology.'
           })}>
-            <span className="company">Sobeys</span>
-            <span className="position">Cashier</span>
-            <span className="years">Aug 2020 - Dec 2020</span>
+            <span className="company">Digital Fire</span>
+            <span className="position">IT Co-op Placement</span>
+            <span className="years">Feb 2022 - Jun 2022</span>
           </Button2>
 
           <Button2 theme="orange" 
@@ -515,13 +516,13 @@ const StyledH1 = styled.h1`
           }}
           onClick={() => openJobModal({
             company: 'Sobeys',
-            position: 'Cashier',
-            years: 'Aug 2020 - Dec 2020',
-            duties: 'among us'
+            position: 'Front End Cashier',
+            years: 'May 2021 - Sep 2021',
+            duties: 'Operated an advanced point-of-sale system with precision, ensuring smooth customer transactions and accurate sales records.\n\nDeveloped effective communication skills to assist customers, creating a positive shopping experience and contributing to acustomer-focused environment.'
           })}>
             <span className="company">Sobeys</span>
-            <span className="position">Cashier</span>
-            <span className="years">Aug 2020 - Dec 2020</span>
+            <span className="position">Front End Cashier</span>
+            <span className="years">May 2021 - Sep 2021</span>
           </Button2>        
         </ButtonContainer>
 
@@ -534,7 +535,7 @@ const StyledH1 = styled.h1`
       <div 
         ref={section3}
         style={{
-          background: "rgb(100,100,255)",
+          background: "rgb(80,80,255)",
           ...center,
           flexDirection: "column", // Set flex direction to column
           alignItems: "center", // Center items horizontally
@@ -572,7 +573,7 @@ const StyledH1 = styled.h1`
       <div 
         ref={section4} 
         style={{
-          background: "rgb(55,55,255)",
+          background: "rgb(110,110,255)",
           ...center,
           flexDirection: "column", // Set flex direction to column
           alignItems: "center", // Center items horizontally
@@ -580,15 +581,25 @@ const StyledH1 = styled.h1`
 
         }}> 
 
-          <h1 style={{ 
-            marginTop: 0, 
-            marginBottom: "1vh",
-            fontSize: "8vh",
-
-            }}>Skills</h1>
+          <StyledH1>Skills</StyledH1>
 
         <ButtonContainer>
         <Button3 
+          theme="orange"
+          customStyles={{marginLeft: '5vw',marginRight: '0%',marginBottom: '4vh',}}
+            onClick={() => openJobModal({
+            company: 'Town of Oakville',
+            position: 'Lawn Cutter',
+            years: 'Jan 2023 - Sept 2023',
+            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+          })}>
+              <span className="language">
+                <img src={require('./assets/python.png')} alt="PythonLogo" className="image" />
+                Python </span>
+            <span className="years">Since 2020</span>
+          </Button3>
+  
+          <Button3 
           theme="orange"
           customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
             onClick={() => openJobModal({
@@ -598,50 +609,40 @@ const StyledH1 = styled.h1`
             duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
           })}>
               <span className="language">
-                <img src={require('./assets/python.png')} alt="PythonLogo" className="image" />
-                Pyth
-              </span>
-            <span className="years">Jan 2023 - Sept 2023</span>
-          </Button3>
-  
-          <Button3 
-          theme="orange"
-          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
-            onClick={() => openJobModal({
-            company: 'Town of Oakville',
-            position: 'Lawn Cutter',
-            years: 'Jan 2023 - Sept 2023',
-            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
-          })}>
-            <span className="language">Town of Oakville</span>
-            <span className="years">Jan 2023 - Sept 2023</span>
+                <img src={require('./assets/react.png')} alt="PythonLogo" className="image" />
+                React/CSS/HTML </span>             
+                <span className="years">Since 2023</span>
           </Button3>
 
   
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
+          customStyles={{marginLeft: '0%',marginRight: '5vw',marginBottom: '4vh',}}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
             position: 'Lawn Cutter',
             years: 'Jan 2023 - Sept 2023',
             duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
           })}>
-            <span className="language">Town of Oakville</span>
-            <span className="years">Jan 2023 - Sept 2023</span>
+              <span className="language">
+                <img src={require('./assets/javascript.png')} alt="PythonLogo" className="image" />
+                JavaScript </span>              
+                <span className="years">Since 2022</span>
           </Button3>
   
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
+          customStyles={{marginLeft: '5vw',marginRight: '0%',marginBottom: '4vh',}}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
             position: 'Lawn Cutter',
             years: 'Jan 2023 - Sept 2023',
             duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
           })}>
-            <span className="language">Town of Oakville</span>
-            <span className="years">Jan 2023 - Sept 2023</span>
+              <span className="language">
+                <img src={require('./assets/java.png')} alt="PythonLogo" className="image" />
+                Java </span>                
+                <span className="years">Since 2022</span>
           </Button3>
 
           <Button3 
@@ -653,47 +654,55 @@ const StyledH1 = styled.h1`
             years: 'Jan 2023 - Sept 2023',
             duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
           })}>
-            <span className="language">Town of Oakville</span>
-            <span className="years">Jan 2023 - Sept 2023</span>
+              <span className="language">
+                <img src={require('./assets/elm.png')} alt="PythonLogo" className="image" />
+                Elm </span>                
+                <span className="years">Since 2023</span>
           </Button3>
 
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
+          customStyles={{marginLeft: '0%',marginRight: '5vw',marginBottom: '4vh',}}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
             position: 'Lawn Cutter',
             years: 'Jan 2023 - Sept 2023',
             duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
           })}>
-            <span className="language">Town of Oakville</span>
-            <span className="years">Jan 2023 - Sept 2023</span>
+              <span className="language">
+                <img src={require('./assets/processingpython.png')} alt="PythonLogo" className="image" />
+                Processing Python </span>                
+                <span className="years">2017 - 2022</span>
           </Button3>
 
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
+          customStyles={{marginLeft: '16vw',marginRight: '0%',marginBottom: '0',}}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
             position: 'Lawn Cutter',
             years: 'Jan 2023 - Sept 2023',
             duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
           })}>
-            <span className="language">Town of Oakville</span>
-            <span className="years">Jan 2023 - Sept 2023</span>
+              <span className="language">
+                <img src={require('./assets/p5js.jpg')} alt="PythonLogo" className="image" />
+                P5.js </span>                
+                <span className="years">2017 - 2022</span>
           </Button3>
 
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
+          customStyles={{marginLeft: '0%',marginRight: '16vw',marginBottom: '0',}}
             onClick={() => openJobModal({
             company: 'Town of Oakville',
             position: 'Lawn Cutter',
             years: 'Jan 2023 - Sept 2023',
             duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
           })}>
-            <span className="language">Town of Oakville</span>
-            <span className="years">Jan 2023 - Sept 2023</span>
+              <span className="language">
+                <img src={require('./assets/github.png')} alt="PythonLogo" className="image" />
+                GitHub </span>                
+                <span className="years">Since 2023</span>
           </Button3>
 
 

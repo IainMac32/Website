@@ -70,7 +70,7 @@ const JobModal = ({ isOpen, onClose, jobInfo }) => {
       <p>{jobInfo.years}</p>
       <ul>
         {dutiesList.map((duty, index) => (
-          <li key={index}>{duty.trim()}</li>
+          <li key={index} style={{marginBottom:"15px"}}>{duty.trim()}</li>
         ))}
       </ul>
     </ModalWrapper>
