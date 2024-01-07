@@ -44,12 +44,12 @@ const CloseButton = styled.button`
   border-radius: 5px; /* Rounded edges */
 `;
 
+
+
 const JobModal = ({ isOpen, onClose, jobInfo }) => {
   useEffect(() => {
-    // Add or remove the 'modal-open' class to the body based on the modal's open state
     document.body.classList.toggle('modal-open', isOpen);
 
-    // Cleanup function to remove the 'modal-open' class when the component unmounts
     return () => {
       document.body.classList.remove('modal-open');
     };
@@ -59,20 +59,36 @@ const JobModal = ({ isOpen, onClose, jobInfo }) => {
     return null;
   }
 
-  // Split duties based on double newline and filter out empty strings
   const dutiesList = jobInfo.duties.split('\n\n').filter((duty) => duty.trim() !== '');
+
+  const renderGitHubLink = () => {
+    if (jobInfo.position.toLowerCase().includes('github')) {
+      return (
+        <a href={jobInfo.githubLink} target="_blank" rel="noopener noreferrer">
+          Visit GitHub
+        </a>
+      );
+    }else{return(
+      <p>{jobInfo.position}</p>
+
+
+    );
+    }
+  };
+  
 
   return (
     <ModalWrapper>
       <CloseButton onClick={onClose}>X</CloseButton>
       <h2>{jobInfo.company}</h2>
-      <p>{jobInfo.position}</p>
+      {renderGitHubLink()}
       <p>{jobInfo.years}</p>
       <ul>
         {dutiesList.map((duty, index) => (
-          <li key={index} style={{marginBottom:"15px"}}>{duty.trim()}</li>
+          <li key={index} style={{ marginBottom: '15px' }}>{duty.trim()}</li>
         ))}
       </ul>
+
     </ModalWrapper>
   );
 };

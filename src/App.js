@@ -11,6 +11,7 @@ import resume from './assets/IainMacdonald-2024Resume.pdf';
 
 
 
+
 const theme = {
   blue: {
     default: "#3f51b5",
@@ -104,8 +105,8 @@ const Button2 = styled.button`
   @media (max-width: 768px) {
     width: 100%; /* Take full width on smaller screens to stack vertically */
     margin: 10px; /* Default spacing between buttons on smaller screens */
-    font-size: 2.0vw; /* Adjust the font-size for smaller screens */
-    padding: 5vh 15%; /* Adjust the vertical padding for increased height on smaller screens */
+    font-size: 2.0vh; /* Adjust the font-size for smaller screens */
+    padding: 3vh 15%; /* Adjust the vertical padding for increased height on smaller screens */
   }
 `;
 
@@ -163,9 +164,9 @@ const Button3 = styled.button`
 
   @media (max-width: 768px) {
     width: 100%; /* Take full width on smaller screens to stack vertically */
-    margin: 10px; /* Default spacing between buttons on smaller screens */
-    font-size: 2.0vw; /* Adjust the font-size for smaller screens */
-    padding: 5vh 15%; /* Adjust the vertical padding for increased height on smaller screens */
+    margin: 2px; /* Default spacing between buttons on smaller screens */
+    font-size: 2.0vh; /* Adjust the font-size for smaller screens */
+    padding: 1vh 15%; /* Adjust the vertical padding for increased height on smaller screens */
   }
 `;
 
@@ -191,10 +192,19 @@ const center = {
 };
 
 const HiText = styled.span`
-  font-size: 2vw;
   font-weight: bold;
   display: inline-block;
   animation: colorChange 15s infinite linear;
+  line-height: 0;
+
+  @media (min-width: 768px) {
+    font-size: 2.5vw;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.5vh;
+
+  }
   
   @keyframes colorChange {
     0% {color: violet;}
@@ -241,6 +251,9 @@ export default function App() {
     setSelectedJob(jobInfo);
     setJobModalOpen(true);
   };
+  
+
+
 
   const closeJobModal = () => {
     setJobModalOpen(false);
@@ -262,16 +275,14 @@ export default function App() {
   `;
 
   const StyledParagraph = styled.p`
-  text-align: left;
-
   margin-right: 7%;
-
-  @media (min-width: 768px) {
-    font-size: 1.6vw;
-  }
+  font-size: 1.6vw; /* Default font size for larger screens */
+  text-align: left; /* Default text alignment for larger screens */
 
   @media (max-width: 768px) {
-    font-size: 3.0vw;
+    font-size: 3.0vw; /* Adjusted font size for smaller screens */
+    text-align: center; /* Adjusted text alignment for smaller screens */
+    margin-left: 9vw; /* Adjusted margin for smaller screens */
   }
 `;
 
@@ -289,6 +300,50 @@ const StyledH1 = styled.h1`
   }
 `;
 
+const StyledDiv = styled.div`
+  background: rgb(0, 130, 240);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Default to column for smaller screens */
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
+
+const StyledImg = styled.img`
+  width: 30%; /* Default width for larger screens */
+  height: auto;
+  border-radius: 0%; /* Make the image circular if desired */
+  margin-left: 7%;
+  margin-bottom: 2%; /* Add margin to create space between image and text on smaller screens */
+
+  @media (max-width: 768px) {
+    width: 50%; /* Adjust the width for smaller screens */
+  }
+`;
+
+const StyledLogo = styled.img`
+  width: 2.5vw; /* Default width for larger screens */
+  @media (max-width: 768px) {
+    width: 2.5vh;
+  }
+`;
+
+const StyledHeader = styled.h1`
+  font-size: 2.5vw; /* Default font size for larger screens */
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  @media (max-width: 768px) {
+    font-size: 2vh; /* Adjusted font size for smaller screens */
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+`;
 
   return (
     <div>
@@ -306,12 +361,7 @@ const StyledH1 = styled.h1`
           position: "fixed",
           background: "rgb(40,40,255)",
         }}>
-          <h1 style={{
-            fontSize: "2.5vw",
-            color: "white",
-            marginTop: "5%",
-            marginBottom: "5%",
-          }}>Iain Macdonald</h1>
+          <StyledHeader>Iain Macdonald</StyledHeader>
           
           <Button
             style={{
@@ -367,25 +417,25 @@ const StyledH1 = styled.h1`
             onMouseLeave={() => setIsButtonHovered4(false)}
           >Skills </Button>
 
-<div style={{ display: "flex", alignItems: "center" }}>
-  <div
-            style={{ marginRight: "2vw", cursor: "pointer" }}
-            onClick={() => window.open("https://github.com/IainMac32", "_blank")}
-          >
-            <img src={githubLogo} alt="GitHub Logo" style={{ width: "2.5vw" }} />
-  </div>
-  <a href="https://ca.linkedin.com/in/iain-macdonald-78717720a" target="_blank" rel="noopener noreferrer">
-    <div>
-      <img src={linkedinLogo} alt="LinkedIn Logo" style={{ width: "2.5vw" }} />
-    </div>
-  </a>
-  <div
-    style={{ marginLeft: "2vw", cursor: "pointer" }}
-    onClick={() => window.open(resume, "_blank")}>
-    <img src={resumeLogo} alt="Resume Logo" style={{ width: "2.5vw" }} />
-  </div>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            
+            <div style={{ marginRight: "2vw", cursor: "pointer" }}
+                      onClick={() => window.open("https://github.com/IainMac32", "_blank")}>
+                      <StyledLogo src={githubLogo} alt="GitHub Logo" />
+            </div>
 
-</div>
+            <a href="https://ca.linkedin.com/in/iain-macdonald-78717720a" target="_blank" rel="noopener noreferrer">
+              <div>
+                <StyledLogo src={linkedinLogo} alt="LinkedIn Logo" />
+              </div>
+            </a>
+
+            <div style={{ marginLeft: "2vw", cursor: "pointer" }}
+              onClick={() => window.open(resume, "_blank")}>
+              <StyledLogo src={resumeLogo} alt="Resume Logo" />
+            </div>
+
+          </div>
 
 
 
@@ -399,34 +449,16 @@ const StyledH1 = styled.h1`
       </header>
 
 
-      <div
-        ref={section1}
-        style={{
-          background: "rgb(0,130,240)",
-          ...center,
-          flexDirection: "row", // Set flex direction to column
-
-          alignItems: "center", // Center items horizontally
-          justifyContent: "center", // Center items vertically
-          
-        }}>
-              <img
-              src={IainPhoto}
-              alt="Iain"
-              style={{
-                width: "30%", // Adjust the width as needed
-                height: "auto",
-                borderRadius: "0%", // Make the image circular if desired
-                marginLeft: "7%",
-              }}/>
+      <StyledDiv ref={section1} style = {{...center,}}>
+        <StyledImg src={IainPhoto} alt="Iain" />
 
             <StyledParagraph>
-              <p style={{ textAlign: "left", marginTop: "2%", marginRight: "7%",}}>
+              <p style={{  marginTop: "2%", marginRight: "7%",}}>
                 <HiText>Hi!</HiText> I'm Iain Macdonald an inquisitive, diligent, and hard-working first-year computer science student at McMaster University. My aspiration is to pursue a career in the tech industry as a developer, and I am currently <BoldOutlineText>seeking a Summer co-op placement lasting 4 months</BoldOutlineText>. With a strong foundation in computer science principles and a passion for problem-solving, I am eager to apply my analytical and collaborative skills to a dynamic work environment.
               </p>
             </StyledParagraph>
-
-      </div>
+            
+      </StyledDiv>
         
 
       <div 
@@ -553,22 +585,24 @@ const StyledH1 = styled.h1`
 
         <ButtonContainer>
           <Button2 
-          theme="orange"
-          customStyles={{
-            marginLeft: '0%',
-            marginRight: '0%',
-            marginBottom: '0%',
-            marginTop: '15vh',
-          }}
+            theme="orange"
+            customStyles={{
+              marginLeft: '0%',
+              marginRight: '0%',
+              marginBottom: '0%',
+              marginTop: '15vh',
+            }}
             onClick={() => openJobModal({
-            company: 'Portfolio Website',
-            position: 'GitHub',
-            years: 'Dec 2023 - Present',
-            duties: 'Applied React.js, HTML, and CSS to develop a personal portfolio website within a 2-week timeframe.\n\nThis task involved mastering intricate details and implementing these technologies to create a user-friendly and visually appealinginterface. It also showcases a diverse array of React.js techniques that can be transferred to other front-end projects.'
-          })}>
+              company: 'Portfolio Website',
+              position: 'GitHub',
+              years: 'Dec 2023 - Present', 
+              duties: 'Applied React.js, HTML, and CSS to develop a personal portfolio website within a 2-week timeframe.\n\nThis task involved mastering intricate details and implementing these technologies to create a user-friendly and visually appealing interface. It also showcases a diverse array of React.js techniques that can be transferred to other front-end projects.',
+              githubLink: 'https://github.com/IainMac32/Website', 
+            })}>
             <span className="company">Portfolio Website</span>
             <span className="years">Dec 2023 - Present</span>
           </Button2>
+
         </ButtonContainer>
 
 
