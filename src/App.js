@@ -4,9 +4,10 @@ import styled from "styled-components";
 import JobModal from './JobModal';
 import githubLogo from './assets/github.png';
 import linkedinLogo from './assets/linkedinLogo.png';
-import resumeLogo from './assets/res.png';
+import resumeLogo from './assets/resumeLogo (2).png';
 import IainPhoto from './assets/IainPhoto.png';
 import './App.css';  // Move this import to the top
+import resume from './assets/IainMacdonald-2024Resume.pdf';
 
 
 
@@ -167,7 +168,6 @@ const Button3 = styled.button`
     padding: 5vh 15%; /* Adjust the vertical padding for increased height on smaller screens */
   }
 `;
-
 
 
 
@@ -367,24 +367,25 @@ const StyledH1 = styled.h1`
             onMouseLeave={() => setIsButtonHovered4(false)}
           >Skills </Button>
 
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <a href="https://github.com/IainMac32" target="_blank" rel="noopener noreferrer">
-              <div style={{ marginRight: "2vw"}}>
-                <img src={githubLogo} alt="GitHub Logo" style={{ width: "2.5vw" }} />
-              </div>
-            </a>
-            <a href="https://ca.linkedin.com/in/iain-macdonald-78717720a" target="_blank" rel="noopener noreferrer">
-              <div>
-                <img src={linkedinLogo} alt="LinkedIn Logo" style={{ width: "2.5vw" }} />
-              </div>
-            </a>
-            <a href="./assets/IainMacdonald-2024Resume.pdf" target="_self" rel="noopener noreferrer">
-              <div>
-                <img src={resumeLogo} alt="Resume Logo" style={{ width: "2.5vw" }} />
-              </div>
-            </a>
+<div style={{ display: "flex", alignItems: "center" }}>
+  <div
+            style={{ marginRight: "2vw", cursor: "pointer" }}
+            onClick={() => window.open("https://github.com/IainMac32", "_blank")}
+          >
+            <img src={githubLogo} alt="GitHub Logo" style={{ width: "2.5vw" }} />
+  </div>
+  <a href="https://ca.linkedin.com/in/iain-macdonald-78717720a" target="_blank" rel="noopener noreferrer">
+    <div>
+      <img src={linkedinLogo} alt="LinkedIn Logo" style={{ width: "2.5vw" }} />
+    </div>
+  </a>
+  <div
+    style={{ marginLeft: "2vw", cursor: "pointer" }}
+    onClick={() => window.open(resume, "_blank")}>
+    <img src={resumeLogo} alt="Resume Logo" style={{ width: "2.5vw" }} />
+  </div>
 
-          </div>
+</div>
 
 
 
