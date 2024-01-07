@@ -553,14 +553,13 @@ const StyledH1 = styled.h1`
             marginTop: '15vh',
           }}
             onClick={() => openJobModal({
-            company: 'Town of Oakville',
-            position: 'Lawn Cutter',
-            years: 'Jan 2023 - Sept 2023',
+            company: 'Portfolio Website',
+            position: 'GitHub',
+            years: 'Dec 2023 - Present',
             duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. I hat. The flowers smell nice at night even though its raining out I still like to sit there and smell them'
           })}>
-            <span className="company">Town of Oakville</span>
-            <span className="position">Lawn Cutter</span>
-            <span className="years">Jan 2023 - Sept 2023</span>
+            <span className="company">Portfolio Website</span>
+            <span className="years">Dec 2023 - Present</span>
           </Button2>
         </ButtonContainer>
 
