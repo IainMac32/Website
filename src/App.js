@@ -15,8 +15,8 @@ const theme = {
     hover: "#283593"
   },
   orange:{
-    default: "orange",
-    hover: "darkorange"
+    default: "#FFA011",
+    hover: "#D47F00"
   }
 };
 
