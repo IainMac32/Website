@@ -4,6 +4,7 @@ import styled from "styled-components";
 import JobModal from './JobModal';
 import githubLogo from './assets/github.png';
 import linkedinLogo from './assets/linkedinLogo.png';
+import resumeLogo from './assets/res.png';
 import IainPhoto from './assets/IainPhoto.png';
 import './App.css';  // Move this import to the top
 
@@ -15,8 +16,8 @@ const theme = {
     hover: "#283593"
   },
   orange:{
-    default: "#FFA011",
-    hover: "#D47F00"
+    default: "#00C4DA",
+    hover: "#00A8BA"
   }
 };
 
@@ -377,6 +378,12 @@ const StyledH1 = styled.h1`
                 <img src={linkedinLogo} alt="LinkedIn Logo" style={{ width: "2.5vw" }} />
               </div>
             </a>
+            <a href="./assets/IainMacdonald-2024Resume.pdf" target="_self" rel="noopener noreferrer">
+              <div>
+                <img src={resumeLogo} alt="Resume Logo" style={{ width: "2.5vw" }} />
+              </div>
+            </a>
+
           </div>
 
 
@@ -394,7 +401,7 @@ const StyledH1 = styled.h1`
       <div
         ref={section1}
         style={{
-          background: "rgb(80,80,255)",
+          background: "rgb(0,130,240)",
           ...center,
           flexDirection: "row", // Set flex direction to column
 
@@ -414,7 +421,7 @@ const StyledH1 = styled.h1`
 
             <StyledParagraph>
               <p style={{ textAlign: "left", marginTop: "2%", marginRight: "7%",}}>
-                <HiText>Hi!</HiText> I'm Iain Macdonald an inquisitive, diligent, and hard-working first-year computer science student at McMaster University. My aspiration is to pursue acareer in the tech industry as a developer, and I am currently <BoldOutlineText>seeking a Summer co-op placement lasting 4 months</BoldOutlineText>. With a strong foundation in computer science principles and a passion for problem-solving, I am eager to apply my analytical and collaborative skills to a dynamic work environment.
+                <HiText>Hi!</HiText> I'm Iain Macdonald an inquisitive, diligent, and hard-working first-year computer science student at McMaster University. My aspiration is to pursue a career in the tech industry as a developer, and I am currently <BoldOutlineText>seeking a Summer co-op placement lasting 4 months</BoldOutlineText>. With a strong foundation in computer science principles and a passion for problem-solving, I am eager to apply my analytical and collaborative skills to a dynamic work environment.
               </p>
             </StyledParagraph>
 
@@ -424,7 +431,7 @@ const StyledH1 = styled.h1`
       <div 
         ref={section2} 
         style={{
-          background: "rgb(110,110,255)",
+          background: "rgb(80,80,255)",
           ...center,
           flexDirection: "column", // Set flex direction to column
           alignItems: "center", // Center items horizontally
@@ -448,7 +455,7 @@ const StyledH1 = styled.h1`
             company: 'Mac AI',
             position: 'Software Developer',
             years: 'Oct 2023 - Present',
-            duties: 'Developing an innovative Python application that involves vectorizing different types of inputted documents, storing them in adatabase, and leveraging GPT-3.5 to provide accurate answers to user-generated questions.\n\nUtilizing advanced technologies, including LLM, Vectorization, Vector Database, and Similarity Search through API integration.\n\nCollaborating seamlessly within a team of 7 through GitHub, actively contributing to open communication while engaging indiscussions about design ideas during weekly meetings and daily reporting.'
+            duties: 'Developing an innovative Python application that involves vectorizing different types of inputted documents, storing them in adatabase, and leveraging GPT-3.5 to provide accurate answers to user-generated questions.\n\nUtilizing advanced technologies, including LLM, Vectorization, Vector Database, and Similarity Search through API integration.\n\nCollaborating seamlessly within a team of 7 through GitHub, actively contributing to group sessions while engaging indiscussions about design ideas during weekly meetings and daily reporting.'
           })}>
             <span className="company">Mac AI</span>
             <span className="position">Software Developer</span>
@@ -499,7 +506,7 @@ const StyledH1 = styled.h1`
             company: 'Digital Fire',
             position: 'IT Co-op Placement',
             years: 'Feb 2022 - Jun 2022',
-            duties: 'Applied technical skills with precision to efficiently set up, configure, and upgrade laptops and desktops, seamlessly integratinghardware and software components to ensure optimal system performance and long-term reliability.\n\nAcquired coding proficiency to develop an office inventory system, resulting in improved organization and operational efficiency.\n\nPlayed a key role in important projects by working on hardware construction, and enhancing overall technology.'
+            duties: 'Applied technical skills with precision to efficiently set up, configure, and upgrade laptops and desktops, integrating hardware and software components to ensure optimal system performance and long-term reliability.\n\nAcquired coding proficiency to develop an office inventory system, resulting in improved organization and operational efficiency.\n\nPlayed a key role in important projects by working on hardware construction, and enhancing overall technology.'
           })}>
             <span className="company">Digital Fire</span>
             <span className="position">IT Co-op Placement</span>
@@ -518,7 +525,7 @@ const StyledH1 = styled.h1`
             company: 'Sobeys',
             position: 'Front End Cashier',
             years: 'May 2021 - Sep 2021',
-            duties: 'Operated an advanced point-of-sale system with precision, ensuring smooth customer transactions and accurate sales records.\n\nDeveloped effective communication skills to assist customers, creating a positive shopping experience and contributing to acustomer-focused environment.'
+            duties: 'Operated an advanced point-of-sale system with accuracy, ensuring smooth customer transactions and accurate sales records.\n\nDeveloped effective communication skills to assist customers, creating a positive shopping experience and contributing to a customer-focused environment.'
           })}>
             <span className="company">Sobeys</span>
             <span className="position">Front End Cashier</span>
@@ -535,7 +542,7 @@ const StyledH1 = styled.h1`
       <div 
         ref={section3}
         style={{
-          background: "rgb(80,80,255)",
+          background: "rgb(0,130,240)",
           ...center,
           flexDirection: "column", // Set flex direction to column
           alignItems: "center", // Center items horizontally
@@ -556,7 +563,7 @@ const StyledH1 = styled.h1`
             company: 'Portfolio Website',
             position: 'GitHub',
             years: 'Dec 2023 - Present',
-            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. I hat. The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+            duties: 'Applied React.js, HTML, and CSS to develop a personal portfolio website within a 2-week timeframe.\n\nThis task involved mastering intricate details and implementing these technologies to create a user-friendly and visually appealinginterface. It also showcases a diverse array of React.js techniques that can be transferred to other front-end projects.'
           })}>
             <span className="company">Portfolio Website</span>
             <span className="years">Dec 2023 - Present</span>
@@ -572,7 +579,7 @@ const StyledH1 = styled.h1`
       <div 
         ref={section4} 
         style={{
-          background: "rgb(110,110,255)",
+          background: "rgb(80,80,255)",
           ...center,
           flexDirection: "column", // Set flex direction to column
           alignItems: "center", // Center items horizontally
