@@ -364,7 +364,7 @@ const StyledHeader = styled.h1`
               transform: `translateX(${(scrollPosition > window.innerHeight * -0.5 &&
                 scrollPosition <= window.innerHeight * 0.5) || isButtonHovered1 ? '1vw': '0'})`,
               backgroundColor: (scrollPosition > window.innerHeight * -0.5 &&
-                scrollPosition <= window.innerHeight * 0.5) || isButtonHovered1 ? '#2F4B63' : 'rgb(73,117,156)',
+                scrollPosition <= window.innerHeight * 0.5) || isButtonHovered1 ? '#2F4B63' : 'rgb(193,205,211)',
           
                   }}
             onClick={() => scrollHandler(section1)}
@@ -378,7 +378,7 @@ const StyledHeader = styled.h1`
               transform: `translateX(${(scrollPosition > window.innerHeight * 0.5 &&
                 scrollPosition <= window.innerHeight * 1.5) || isButtonHovered2 ? '1vw': '0'})`,
               backgroundColor: (scrollPosition > window.innerHeight * 0.5 &&
-                scrollPosition <= window.innerHeight * 1.5) || isButtonHovered2 ? '#2F4B63' : 'rgb(73,117,156)',
+                scrollPosition <= window.innerHeight * 1.5) || isButtonHovered2 ? '#2F4B63' : 'rgb(193,205,211)',
 
                   }}
             onClick={() => scrollHandler(section2)}
@@ -391,7 +391,7 @@ const StyledHeader = styled.h1`
               transform: `translateX(${(scrollPosition > window.innerHeight * 1.5 &&
                 scrollPosition <= window.innerHeight * 2.5) || isButtonHovered3 ? '1vw': '0'})`,
               backgroundColor: (scrollPosition > window.innerHeight * 1.5 &&
-                scrollPosition <= window.innerHeight * 2.5) || isButtonHovered3 ? '#2F4B63' : 'rgb(73,117,156)',
+                scrollPosition <= window.innerHeight * 2.5) || isButtonHovered3 ? '#2F4B63' : 'rgb(193,205,211)',
 
                   }}
             onClick={() => scrollHandler(section3)}
@@ -405,7 +405,7 @@ const StyledHeader = styled.h1`
               transform: `translateX(${(scrollPosition > window.innerHeight * 2.5 &&
                 scrollPosition <= window.innerHeight * 4) || isButtonHovered4 ? '1vw': '0'})`,
               backgroundColor: (scrollPosition > window.innerHeight * 2.5 &&
-                scrollPosition <= window.innerHeight * 4) || isButtonHovered4 ? '#2F4B63' : 'rgb(73,117,156)',
+                scrollPosition <= window.innerHeight * 4) || isButtonHovered4 ? '#2F4B63' : 'rgb(193,205,211)',
 
                   }}
             onClick={() => scrollHandler(section4)}
@@ -571,7 +571,7 @@ const StyledHeader = styled.h1`
       <div 
         ref={section3}
         style={{
-          background: "rgb(73,117,156)",
+          background: "rgb(193,205,211)",
           ...center,
           flexDirection: "column", 
           alignItems: "center", 
