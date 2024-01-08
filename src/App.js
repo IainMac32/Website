@@ -194,7 +194,7 @@ const center = {
 const HiText = styled.span`
   font-weight: bold;
   display: inline-block;
-  animation: colorChange 4s infinite linear;
+  animation: colorChange 2s infinite linear;
   line-height: 0;
 
   @media (min-width: 768px) {
@@ -202,7 +202,7 @@ const HiText = styled.span`
   }
 
   @media (max-width: 768px) {
-    font-size: 2.5vh;
+    font-size: 3.0vh;
 
   }
   
@@ -275,7 +275,7 @@ export default function App() {
   text-align: left; 
 
   @media (max-width: 768px) {
-    font-size: 3.0vw; 
+    font-size: 2.0vh; 
     text-align: center; 
     margin-left: 9vw; 
   }
@@ -462,9 +462,9 @@ const StyledHeader = styled.h1`
         style={{
           background: "#2F4B63",
           ...center,
-          flexDirection: "column", // Set flex direction to column
-          alignItems: "center", // Center items horizontally
-          justifyContent: "flex-start", // Align items at the start of the container (top)
+          flexDirection: "column", 
+          alignItems: "center", 
+          justifyContent: "flex-start", 
       
         }}> 
           <StyledH1>Experience</StyledH1>
@@ -573,9 +573,9 @@ const StyledHeader = styled.h1`
         style={{
           background: "rgb(73,117,156)",
           ...center,
-          flexDirection: "column", // Set flex direction to column
-          alignItems: "center", // Center items horizontally
-          justifyContent: "flex-start", // Align items at the start of the container (top)
+          flexDirection: "column", 
+          alignItems: "center", 
+          justifyContent: "flex-start", 
         }}>
         <StyledH1>Projects</StyledH1>
 
@@ -612,9 +612,9 @@ const StyledHeader = styled.h1`
         style={{
           background: "#2F4B63",
           ...center,
-          flexDirection: "column", // Set flex direction to column
-          alignItems: "center", // Center items horizontally
-          justifyContent: "flex-start", // Align items at the start of the container (top)
+          flexDirection: "column", 
+          alignItems: "center", 
+          justifyContent: "flex-start", 
 
         }}> 
 
@@ -741,13 +741,9 @@ const StyledHeader = styled.h1`
                 GitHub </span>                
                 <span className="years">Since 2023</span>
           </Button3>
-
-
         </ButtonContainer>
 
 
-
-        
       </div>
 
     </div>
