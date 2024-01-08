@@ -88,7 +88,7 @@ const Button2 = styled.button`
   }
 
   .years {
-    font-size: 1em; /* Adjust the font-size for employment years */
+    font-size: 1em; 
     margin-top: 0.2em;
   }
 
@@ -96,17 +96,17 @@ const Button2 = styled.button`
   ${(props) => props.customStyles}
 
   @media (min-width: 768px) {
-    width: 31vw; /* Adjust the width for larger screens to form a 2x2 grid */
-    font-size: 4.0vh; /* Adjust the font-size for larger screens */
-    height: 26vh; /* Adjust the vertical padding for increased height on larger screens */
+    width: 31vw; 
+    font-size: 4.0vh; 
+    height: 26vh; 
 
   }
 
   @media (max-width: 768px) {
-    width: 100%; /* Take full width on smaller screens to stack vertically */
-    margin: 10px; /* Default spacing between buttons on smaller screens */
-    font-size: 2.0vh; /* Adjust the font-size for smaller screens */
-    padding: 3vh 15%; /* Adjust the vertical padding for increased height on smaller screens */
+    width: 100%; 
+    margin: 10px; 
+    font-size: 2.0vh; 
+    padding: 3vh 15%; 
   }
 `;
 
@@ -123,13 +123,13 @@ const Button3 = styled.button`
   outline: 0;
   cursor: pointer;
   border-style:none;
-  border: 3px solid black; /* Add a black border */
+  border: 3px solid black; 
   transition: ease background-color 250ms, ease transform 250ms;
   display: flex;
-  flex-direction: column; /* To display company and years vertically */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
-  white-space: nowrap; /* Prevents wrapping to new lines */
+  white-space: nowrap; 
 
   &:hover {
     background-color: ${(props) => theme[props.theme].hover};
@@ -139,17 +139,17 @@ const Button3 = styled.button`
   .language {
     font-weight: bold;
     display: flex;
-    align-items: center; // Align items vertically in the flex container
+    align-items: center; 
 
     .image {
-      margin-right: 10px; // Adjust spacing between image and text
-      max-width: 5vh; // Set a max-width for the image
+      margin-right: 10px; 
+      max-width: 5vh; 
       border-radius: 5px;
     }
   }
 
   .years {
-    font-size: 1em; /* Adjust the font-size for employment years */
+    font-size: 1em; 
     margin-top: 0.2em;
   }
 
@@ -157,16 +157,16 @@ const Button3 = styled.button`
   ${(props) => props.customStyles}
 
   @media (min-width: 768px) {
-    width: 20vw; /* Adjust the width for larger screens to form a 2x2 grid */
-    font-size: 3.2vh; /* Adjust the font-size for larger screens */
-    height: 25.8vh; /* Adjust the vertical padding for increased height on larger screens */
+    width: 20vw; 
+    font-size: 3.2vh; 
+    height: 25.8vh; 
   }
 
   @media (max-width: 768px) {
-    width: 100%; /* Take full width on smaller screens to stack vertically */
-    margin: 2px; /* Default spacing between buttons on smaller screens */
-    font-size: 2.0vh; /* Adjust the font-size for smaller screens */
-    padding: 1vh 15%; /* Adjust the vertical padding for increased height on smaller screens */
+    width: 100%; 
+    margin: 2px; 
+    font-size: 2.0vh; 
+    padding: 1vh 15%;
   }
 `;
 
@@ -194,7 +194,7 @@ const center = {
 const HiText = styled.span`
   font-weight: bold;
   display: inline-block;
-  animation: colorChange 15s infinite linear;
+  animation: colorChange 8s infinite linear;
   line-height: 0;
 
   @media (min-width: 768px) {
@@ -207,14 +207,10 @@ const HiText = styled.span`
   }
   
   @keyframes colorChange {
-    0% {color: violet;}
-    14.28% {color: indigo;}
-    28.56% {color: blue;}
-    42.84% {color: green;}
-    57.12% {color: yellow;}
-    71.4% {color: orange;}
-    85.68% {color: red;}
-    100% {color: violet;}
+    0% {color: white;}
+    50% {color: rgb(255,110,0);}
+    100% {color: white;}
+
   }`;
 
 export default function App() {
@@ -276,13 +272,13 @@ export default function App() {
 
   const StyledParagraph = styled.p`
   margin-right: 7%;
-  font-size: 1.6vw; /* Default font size for larger screens */
-  text-align: left; /* Default text alignment for larger screens */
+  font-size: 1.6vw; 
+  text-align: left; 
 
   @media (max-width: 768px) {
-    font-size: 3.0vw; /* Adjusted font size for smaller screens */
-    text-align: center; /* Adjusted text alignment for smaller screens */
-    margin-left: 9vw; /* Adjusted margin for smaller screens */
+    font-size: 3.0vw; 
+    text-align: center; 
+    margin-left: 9vw; 
   }
 `;
 
@@ -301,7 +297,7 @@ const StyledH1 = styled.h1`
 `;
 
 const StyledDiv = styled.div`
-  background: rgb(0, 130, 240);
+  background: rgb(230, 160, 70);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -464,7 +460,7 @@ const StyledHeader = styled.h1`
       <div 
         ref={section2} 
         style={{
-          background: "rgb(80,80,255)",
+          background: "rgb(240,120,10)",
           ...center,
           flexDirection: "column", // Set flex direction to column
           alignItems: "center", // Center items horizontally
