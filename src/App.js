@@ -194,7 +194,7 @@ const center = {
 const HiText = styled.span`
   font-weight: bold;
   display: inline-block;
-  animation: colorChange 10s infinite linear;
+  animation: colorChange 4s infinite linear;
   line-height: 0;
 
   @media (min-width: 768px) {
@@ -210,7 +210,6 @@ const HiText = styled.span`
     0% {color: rgb(255,110,0);}
     50% {color: white;}
     100% {color: rgb(255,110,0);}
-
   }`;
 
 export default function App() {
@@ -450,7 +449,7 @@ const StyledHeader = styled.h1`
 
             <StyledParagraph>
               <p style={{  marginTop: "2%", marginRight: "7%",}}>
-                <HiText>Hi!</HiText> I'm Iain Macdonald an inquisitive, diligent, and hard-working first-year computer science student at McMaster University. My aspiration is to pursue a career in the tech industry as a developer, and I am currently <BoldOutlineText>seeking a Summer co-op placement lasting 4 months</BoldOutlineText>. With a strong foundation in computer science principles and a passion for problem-solving, I am eager to apply my analytical and collaborative skills to a dynamic work environment.
+                <HiText>Hi!</HiText> I'm Iain Macdonald, an inquisitive, diligent, and hard-working first-year computer science student at McMaster University. My aspiration is to pursue a career in the tech industry as a developer, and I am currently <BoldOutlineText>seeking a Summer co-op placement lasting 4 months</BoldOutlineText>. With a strong foundation in computer science principles and a passion for problem-solving, I am eager to apply my analytical and collaborative skills to a dynamic work environment.
               </p>
             </StyledParagraph>
             
