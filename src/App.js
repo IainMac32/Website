@@ -290,7 +290,8 @@ const StyledH1 = styled.h1`
 
   @media (max-width: 768px) {
     font-size: 10vw;
-    margin-top: 5.0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
 
   }
 `;
