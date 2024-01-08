@@ -618,7 +618,7 @@ const StyledHeader = styled.h1`
 
         }}> 
 
-          <StyledH1>Skills</StyledH1>
+          <StyledH1>Skillss</StyledH1>
 
         <ButtonContainer>
         <Button3 
