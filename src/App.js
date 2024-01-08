@@ -329,7 +329,7 @@ const StyledLogo = styled.img`
 
 const StyledHeader = styled.h1`
   font-size: 2.5vw; /* Default font size for larger screens */
-  color: white;
+  color: black;
   margin-top: 5%;
   margin-bottom: 5%;
 
@@ -355,7 +355,7 @@ const StyledHeader = styled.h1`
           padding: 0,
           justifyContent: "space-evenly",
           position: "fixed",
-          background: "rgb(40,40,255)",
+          background: "rgb(255,255,255)",
         }}>
           <StyledHeader>Iain Macdonald</StyledHeader>
           
