@@ -571,7 +571,7 @@ const StyledHeader = styled.h1`
       <div 
         ref={section3}
         style={{
-          background: "rgb(0,130,240)",
+          background: "rgb(73,117,156)",
           ...center,
           flexDirection: "column", // Set flex direction to column
           alignItems: "center", // Center items horizontally
@@ -610,7 +610,7 @@ const StyledHeader = styled.h1`
       <div 
         ref={section4} 
         style={{
-          background: "rgb(80,80,255)",
+          background: "#2F4B63",
           ...center,
           flexDirection: "column", // Set flex direction to column
           alignItems: "center", // Center items horizontally
