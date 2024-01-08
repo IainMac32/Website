@@ -673,13 +673,13 @@ const StyledHeader = styled.h1`
             onClick={() => openJobModal({
             company: 'Java',
             position: '',
-            years: 'Since 2022',
+            years: '2022',
             duties: '\n\nI learnt Java for the first time while in grade 12 and really enjoyed it. Java quickly became one of my favourite languages as it is very straightforward but still viable for large projects.\n\nI got really into Java during grade 12 but unfortunately, I haven’t found many chances to use it since so I hope I can find opportunities to utilize it in the future.'
           })}>
               <span className="language">
                 <img src={require('./assets/java.png')} alt="PythonLogo" className="image" />
                 Java </span>                
-                <span className="years">Since 2022</span>
+                <span className="years">2022</span>
           </Button3>
 
           <Button3 
@@ -714,7 +714,7 @@ const StyledHeader = styled.h1`
 
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '16vw',marginRight: '0%',marginBottom: '4vh',}}
+          customStyles={{marginLeft: '16vw',marginRight: '0%',marginBottom: '0%',}}
             onClick={() => openJobModal({
             company: 'Processing Python',
             position: '',
