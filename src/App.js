@@ -355,6 +355,7 @@ const StyledHeader = styled.h1`
           justifyContent: "space-evenly",
           position: "fixed",
           background: "#2F4B63",
+          borderRight: "3px solid black",
         }}>
           <StyledHeader>Iain Macdonald</StyledHeader>
           
