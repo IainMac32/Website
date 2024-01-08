@@ -194,7 +194,7 @@ const center = {
 const HiText = styled.span`
   font-weight: bold;
   display: inline-block;
-  animation: colorChange 8s infinite linear;
+  animation: colorChange 10s infinite linear;
   line-height: 0;
 
   @media (min-width: 768px) {
