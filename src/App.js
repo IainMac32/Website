@@ -18,8 +18,8 @@ const theme = {
     hover: "#283593"
   },
   orange:{
-    default: "#00C4DA",
-    hover: "#00A8BA"
+    default: "rgb(215, 140, 30)",
+    hover: "rgb(240,120,10)"
   }
 };
 
@@ -207,9 +207,9 @@ const HiText = styled.span`
   }
   
   @keyframes colorChange {
-    0% {color: white;}
-    50% {color: rgb(255,110,0);}
-    100% {color: white;}
+    0% {color: rgb(255,110,0);}
+    50% {color: white;}
+    100% {color: rgb(255,110,0);}
 
   }`;
 
@@ -297,7 +297,7 @@ const StyledH1 = styled.h1`
 `;
 
 const StyledDiv = styled.div`
-  background: rgb(230, 160, 70);
+  background: rgb(0,130,240);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,7 +460,7 @@ const StyledHeader = styled.h1`
       <div 
         ref={section2} 
         style={{
-          background: "rgb(240,120,10)",
+          background: "rgb(80,80,255)",
           ...center,
           flexDirection: "column", // Set flex direction to column
           alignItems: "center", // Center items horizontally
