@@ -297,7 +297,7 @@ const StyledH1 = styled.h1`
 `;
 
 const StyledDiv = styled.div`
-  background: rgb(0,130,240);
+  background: rgb(73,117,156);
   display: flex;
   align-items: center;
   justify-content: center;
