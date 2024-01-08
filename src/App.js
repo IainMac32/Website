@@ -18,7 +18,7 @@ const theme = {
     hover: "#2F4B63"
   },
   orange:{
-    default: "rgb(215, 140, 30)",
+    default: "rgb(216,134,59)",
     hover: "rgb(240,120,10)"
   }
 };
