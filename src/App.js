@@ -488,7 +488,7 @@ const StyledHeader = styled.h1`
             company: 'Mac AI',
             position: 'Software Developer',
             years: 'Oct 2023 - Present',
-            duties: 'Developing an innovative Python application that involves vectorizing different types of inputted documents, storing them in adatabase, and leveraging GPT-3.5 to provide accurate answers to user-generated questions.\n\nUtilizing advanced technologies, including LLM, Vectorization, Vector Database, and Similarity Search through API integration.\n\nCollaborating seamlessly within a team of 7 through GitHub, actively contributing to group sessions while engaging indiscussions about design ideas during weekly meetings and daily reporting.'
+            duties: 'Developing an innovative Python application that involves vectorizing different types of inputted documents, storing them in a database, and leveraging GPT-3.5 to provide accurate answers to user-generated questions.\n\nUtilizing advanced technologies, including LLM, Vectorization, Vector Database, and Similarity Search through API integration.\n\nCollaborating seamlessly within a team of 7 through GitHub, actively contributing to group sessions while engaging in discussions about design ideas during weekly meetings and daily reporting.'
           })}>
             <span className="company">Mac AI</span>
             <span className="position">Software Developer</span>
@@ -522,7 +522,7 @@ const StyledHeader = styled.h1`
             company: 'LocalStudent.com',
             position: 'Landscaper',
             years: 'Jul 2022 - Sep 2022',
-            duties: 'Mowed/Trimmed lawns.\n\nWeeded gardens'
+            duties: 'Founded and operated my own lawn care service while at LocalStudent.com, taking on responsibilities such as client management, scheduling, and ensuring high-quality landscaping services.\n\nTook care of lawns by mowing and trimming as well as weeding gardens with precision, ensuring a neat and polished appearance for outdoor spaces.'
            })}>
             <span className="company">LocalStudent.com</span>
             <span className="position">Landscaper</span>
@@ -629,10 +629,10 @@ const StyledHeader = styled.h1`
           theme="orange"
           customStyles={{marginLeft: '5vw',marginRight: '0%',marginBottom: '4vh',}}
             onClick={() => openJobModal({
-            company: 'Town of Oakville',
-            position: 'Lawn Cutter',
-            years: 'Jan 2023 - Sept 2023',
-            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+            company: 'Python',
+            position: '',
+            years: 'Since 2020',
+            duties: '\n\nPython is likely my strongest coding language, as I have been using it since I was about 14.\n\nI think that Python is so distinctive as it is easy for beginners to learn but has such a high level of potential especially when creating AI.\n\nThe backend of my current Mac AI project is coded in Python so I am continually increasing my knowledge about the language.            '
           })}>
               <span className="language">
                 <img src={require('./assets/python.png')} alt="PythonLogo" className="image" />
@@ -644,10 +644,10 @@ const StyledHeader = styled.h1`
           theme="orange"
           customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
             onClick={() => openJobModal({
-            company: 'Town of Oakville',
-            position: 'Lawn Cutter',
-            years: 'Jan 2023 - Sept 2023',
-            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+            company: 'React/CSS/HTML',
+            position: '',
+            years: 'Since 2023',
+            duties: '\n\nWhile learning React during the development of my website I learned how complex front-end design can be.\n\nI was able to learn how to think abstractly and technically about programming while using this framework. I learned how to use React within 2 weeks in order to make my personal website.'
           })}>
               <span className="language">
                 <img src={require('./assets/react.png')} alt="PythonLogo" className="image" />
@@ -660,10 +660,10 @@ const StyledHeader = styled.h1`
           theme="orange"
           customStyles={{marginLeft: '0%',marginRight: '5vw',marginBottom: '4vh',}}
             onClick={() => openJobModal({
-            company: 'Town of Oakville',
-            position: 'Lawn Cutter',
-            years: 'Jan 2023 - Sept 2023',
-            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+            company: 'JavaScript',
+            position: '',
+            years: 'Since 2022',
+            duties: '\n\nWhile working on my personal website I learned how to program in JavaScript and I thoroughly enjoyed it.\n\nJavaScript allowed me to add a level of creativity to my code that I was unable to do before and it was genuinely entertaining. I hope to use more JavaScript in the future along with React to create more fascinating websites.\n\nIn addition to my website I have also used JS in the past to make personal projects within Google Appscript to manipulate Google Sheets. I even made a full inventory system with it during my Digital Fire co-op.'
           })}>
               <span className="language">
                 <img src={require('./assets/javascript.png')} alt="PythonLogo" className="image" />
@@ -675,10 +675,10 @@ const StyledHeader = styled.h1`
           theme="orange"
           customStyles={{marginLeft: '5vw',marginRight: '0%',marginBottom: '4vh',}}
             onClick={() => openJobModal({
-            company: 'Town of Oakville',
-            position: 'Lawn Cutter',
-            years: 'Jan 2023 - Sept 2023',
-            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+            company: 'Java',
+            position: '',
+            years: 'Since 2022',
+            duties: '\n\nI learnt Java for the first time while in grade 12 and really enjoyed it. Java quickly became one of my favourite languages as it is very straightforward but still viable for large projects.\n\nI got really into Java during grade 12 but unfortunately, I haven’t found many chances to use it since so I hope I can find opportunities to utilize it in the future.'
           })}>
               <span className="language">
                 <img src={require('./assets/java.png')} alt="PythonLogo" className="image" />
@@ -690,10 +690,10 @@ const StyledHeader = styled.h1`
           theme="orange"
           customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
             onClick={() => openJobModal({
-            company: 'Town of Oakville',
-            position: 'Lawn Cutter',
-            years: 'Jan 2023 - Sept 2023',
-            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+            company: 'Elm',
+            position: '',
+            years: 'Since 2023',
+            duties: '\n\nElm is what I learned during my first semester of university in a course called Introduction to Computational Thinking.\n\nElm was the first functional language that I learned so it took a while to adjust but after the semester I felt confident in functional coding.\n\nI had many group projects throughout the semester that not only increased my skills with Elm but also with communication and accountability while working within a group.'
           })}>
               <span className="language">
                 <img src={require('./assets/elm.png')} alt="PythonLogo" className="image" />
@@ -703,27 +703,12 @@ const StyledHeader = styled.h1`
 
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '0%',marginRight: '5vw',marginBottom: '4vh',}}
+          customStyles={{marginLeft: '0%',marginRight: '5vw',marginBottom: '0',}}
             onClick={() => openJobModal({
-            company: 'Town of Oakville',
-            position: 'Lawn Cutter',
-            years: 'Jan 2023 - Sept 2023',
-            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
-          })}>
-              <span className="language">
-                <img src={require('./assets/processingpython.png')} alt="PythonLogo" className="image" />
-                Processing Python </span>                
-                <span className="years">2017 - 2022</span>
-          </Button3>
-
-          <Button3 
-          theme="orange"
-          customStyles={{marginLeft: '16vw',marginRight: '0%',marginBottom: '0',}}
-            onClick={() => openJobModal({
-            company: 'Town of Oakville',
-            position: 'Lawn Cutter',
-            years: 'Jan 2023 - Sept 2023',
-            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+            company: 'P5.js',
+            position: '',
+            years: '2017 - 2022',
+            duties: '\n\nI used P5.js while taking coding lessons from the age of 12 to 17 with Hatch Coding. \n\nThis was my introduction to visual programming and ever since I have been interested in learning new ways to show off my code in unique graphical ways, it even motivated me to make this website!\n\nThis is the language that I won both the Hatch Game Jam and Digital Coded Art Competition.'
           })}>
               <span className="language">
                 <img src={require('./assets/p5js.jpg')} alt="PythonLogo" className="image" />
@@ -733,12 +718,27 @@ const StyledHeader = styled.h1`
 
           <Button3 
           theme="orange"
+          customStyles={{marginLeft: '16vw',marginRight: '0%',marginBottom: '4vh',}}
+            onClick={() => openJobModal({
+            company: 'Processing Python',
+            position: '',
+            years: '2017 - 2022',
+            duties: '\n\nAlong with P5.js I also learned Processing Python while at Hatch Coding from the age of 12 to 17.\n\nI decided to learn Processing Python alongside P5.js so that I could learn the formatting of Python before learning the actual language.'
+          })}>
+              <span className="language">
+                <img src={require('./assets/processingpython.png')} alt="PythonLogo" className="image" />
+                Processing Python </span>                
+                <span className="years">2017 - 2022</span>
+          </Button3>
+
+          <Button3 
+          theme="orange"
           customStyles={{marginLeft: '0%',marginRight: '16vw',marginBottom: '0',}}
             onClick={() => openJobModal({
-            company: 'Town of Oakville',
-            position: 'Lawn Cutter',
-            years: 'Jan 2023 - Sept 2023',
-            duties: 'Responsible for maintaining lawns and outdoor spaces. I kind of like to eat food, but I also like to sleep. I hate sleeping. \n\n I hat. \n\n The flowers smell nice at night even though its raining out I still like to sit there and smell them'
+            company: 'GitHub',
+            position: '',
+            years: 'Since 2023',
+            duties: '\n\nI have been using GitHub for around a year now. I began using it to transfer my code between my laptop and PC while in school and now use it almost daily.\n\nI also use GitHub within the Mac AI club to work on projects so I am used to pushing, pulling, and committing within a team repository.'
           })}>
               <span className="language">
                 <img src={require('./assets/github.png')} alt="PythonLogo" className="image" />
