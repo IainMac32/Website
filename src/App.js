@@ -309,7 +309,7 @@ const StyledDiv = styled.div`
 `;
 
 const StyledImg = styled.img`
-  width: 30%; /* Default width for larger screens */
+  width: 30%; 
   height: auto;
   border-radius: 0%; /* Make the image circular if desired */
   margin-left: 7%;
