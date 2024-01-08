@@ -14,8 +14,8 @@ import resume from './assets/IainMacdonald-2024Resume.pdf';
 
 const theme = {
   blue: {
-    default: "#3f51b5",
-    hover: "#283593"
+    default: "rgb(73,117,156)",
+    hover: "#2F4B63"
   },
   orange:{
     default: "rgb(215, 140, 30)",
@@ -364,7 +364,7 @@ const StyledHeader = styled.h1`
               transform: `translateX(${(scrollPosition > window.innerHeight * -0.5 &&
                 scrollPosition <= window.innerHeight * 0.5) || isButtonHovered1 ? '1vw': '0'})`,
               backgroundColor: (scrollPosition > window.innerHeight * -0.5 &&
-                scrollPosition <= window.innerHeight * 0.5) || isButtonHovered1 ? '#283593' : '#3f51b5',
+                scrollPosition <= window.innerHeight * 0.5) || isButtonHovered1 ? '#2F4B63' : 'rgb(73,117,156)',
           
                   }}
             onClick={() => scrollHandler(section1)}
@@ -378,7 +378,7 @@ const StyledHeader = styled.h1`
               transform: `translateX(${(scrollPosition > window.innerHeight * 0.5 &&
                 scrollPosition <= window.innerHeight * 1.5) || isButtonHovered2 ? '1vw': '0'})`,
               backgroundColor: (scrollPosition > window.innerHeight * 0.5 &&
-                scrollPosition <= window.innerHeight * 1.5) || isButtonHovered2 ? '#283593' : '#3f51b5',
+                scrollPosition <= window.innerHeight * 1.5) || isButtonHovered2 ? '#2F4B63' : 'rgb(73,117,156)',
 
                   }}
             onClick={() => scrollHandler(section2)}
@@ -391,7 +391,7 @@ const StyledHeader = styled.h1`
               transform: `translateX(${(scrollPosition > window.innerHeight * 1.5 &&
                 scrollPosition <= window.innerHeight * 2.5) || isButtonHovered3 ? '1vw': '0'})`,
               backgroundColor: (scrollPosition > window.innerHeight * 1.5 &&
-                scrollPosition <= window.innerHeight * 2.5) || isButtonHovered3 ? '#283593' : '#3f51b5',
+                scrollPosition <= window.innerHeight * 2.5) || isButtonHovered3 ? '#2F4B63' : 'rgb(73,117,156)',
 
                   }}
             onClick={() => scrollHandler(section3)}
@@ -405,7 +405,7 @@ const StyledHeader = styled.h1`
               transform: `translateX(${(scrollPosition > window.innerHeight * 2.5 &&
                 scrollPosition <= window.innerHeight * 4) || isButtonHovered4 ? '1vw': '0'})`,
               backgroundColor: (scrollPosition > window.innerHeight * 2.5 &&
-                scrollPosition <= window.innerHeight * 4) || isButtonHovered4 ? '#283593' : '#3f51b5',
+                scrollPosition <= window.innerHeight * 4) || isButtonHovered4 ? '#2F4B63' : 'rgb(73,117,156)',
 
                   }}
             onClick={() => scrollHandler(section4)}
