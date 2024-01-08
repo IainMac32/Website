@@ -97,7 +97,7 @@ const Button2 = styled.button`
 
   @media (min-width: 768px) {
     width: 31vw; 
-    font-size: 4.0vh; 
+    font-size: 1.9vw; 
     height: 26vh; 
 
   }
@@ -158,7 +158,7 @@ const Button3 = styled.button`
 
   @media (min-width: 768px) {
     width: 20vw; 
-    font-size: 3.2vh; 
+    font-size: 1.55vw; 
     height: 25.8vh; 
   }
 
