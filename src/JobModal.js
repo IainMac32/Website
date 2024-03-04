@@ -68,10 +68,13 @@ const JobModal = ({ isOpen, onClose, jobInfo }) => {
           Visit GitHub
         </a>
       );
-    }else{return(
+    }else if (jobInfo.position.toLowerCase().includes('devpost')) {
+      return (
+        <a href={jobInfo.githubLink} target="_blank" rel="noopener noreferrer">
+          Visit DevPost
+        </a>
+      );} else{return(
       <p>{jobInfo.position}</p>
-
-
     );
     }
   };

@@ -610,10 +610,10 @@ const StyledHeader = styled.h1`
             }}
             onClick={() => openJobModal({
               company: 'McMaster Google Hackathon',
-              position: 'GitHub',
+              position: 'DevPost',
               years: 'Dec 2023', 
               duties: 'Finished 1st place in the Google Developer Student Clubs McMaster Hackathon Equality and Accessibility category.\n\nThis was my first hackathon, and it was a fantastic experience. It lasted 26 hours and had over 175 participants. The hackathon required incorporating at least one Google technology and contributing to one of the 17 United Nations Sustainable Development Goals.\n\n Our project, SparkSlides, automates slideshow creation using Google and other technologies such as Google Slides, Google Drive, and Google Image Search APIs, as well as Open AIs WhisperAI and GPT-4. Users input a topic and receive a fully formatted presentation with titles, jot notes and images.',
-              githubLink: 'https://github.com/IainMac32/GDSChackathon', 
+              githubLink: 'https://devpost.com/software/sparkslides',
             })}>
             <span className="company">McMaster Google Hackathon</span>
             <span className="years">Feb 2024</span>
