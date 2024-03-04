@@ -485,7 +485,7 @@ const StyledHeader = styled.h1`
             company: 'McMaster AI Society',
             position: 'Software Developer',
             years: 'Oct 2023 - Mar 2024',
-            duties: 'Our project team of 7 created a website called SecondBrain that allows users to upload documents to their unique database and ask questions about the documents at any time without the need of ever uploading the document more than once.\n\We utilized technologies such as GPT-4, vectorization, vector databases, LangChain, and Similarity Search through API integration.\n\nCollaborated seamlessly within a team of 7 through GitHub, actively contributing to group sessions while engaging in discussions about design ideas during weekly meetings and daily reporting.'
+            duties: 'Our project team of 7 created a website called SecondBrain that allows users to upload documents to their unique database and ask questions about the documents at any time without the need of ever uploading the document more than once.\n\nWe utilized technologies such as GPT-4, vectorization, vector databases, LangChain, and Similarity Search through API integration.\n\nCollaborated seamlessly within a team of 7 through GitHub, actively contributing to group sessions while engaging in discussions about design ideas during weekly meetings and daily reporting.'
           })}>
             <span className="company">McMaster AI Society</span>
             <span className="position">Software Developer</span>
