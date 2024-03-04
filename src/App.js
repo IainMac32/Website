@@ -482,14 +482,14 @@ const StyledHeader = styled.h1`
 
           }}
             onClick={() => openJobModal({
-            company: 'Mac AI',
+            company: 'McMaster AI Society',
             position: 'Software Developer',
-            years: 'Oct 2023 - Present',
-            duties: 'Developing an innovative Python application that involves vectorizing different types of inputted documents, storing them in a database, and leveraging GPT-3.5 to provide accurate answers to user-generated questions.\n\nUtilizing advanced technologies, including LLM, Vectorization, Vector Database, and Similarity Search through API integration.\n\nCollaborating seamlessly within a team of 7 through GitHub, actively contributing to group sessions while engaging in discussions about design ideas during weekly meetings and daily reporting.'
+            years: 'Oct 2023 - Mar 2024',
+            duties: 'Our project team of 7 created a website called SecondBrain that allows users to upload documents to their unique database and ask questions about the documents at any time without the need of ever uploading the document more than once.\n\We utilized technologies such as GPT-4, vectorization, vector databases, LangChain, and Similarity Search through API integration.\n\nCollaborated seamlessly within a team of 7 through GitHub, actively contributing to group sessions while engaging in discussions about design ideas during weekly meetings and daily reporting.'
           })}>
-            <span className="company">Mac AI</span>
+            <span className="company">McMaster AI Society</span>
             <span className="position">Software Developer</span>
-            <span className="years">Oct 2023 - Present</span>
+            <span className="years">Oct 2023 - Mar 2024</span>
           </Button2>
   
           <Button2 theme="orange" 
