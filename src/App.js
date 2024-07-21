@@ -706,6 +706,21 @@ const StyledHeader = styled.h1`
           theme="orange"
           customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '4vh',}}
             onClick={() => openJobModal({
+            company: 'C',
+            position: '',
+            years: '2024',
+            duties: '\n\nI began coding in C during my first year of university part of a class called Computer Science Practice and Experience: Development Basics. I really enjoyed learning my first general purpose language especially learning about pointers, storage allocation, and more specifical details about how coding works in the hardware of computers.'
+          })}>
+              <span className="language">
+                <img src={require('./assets/C.png')} alt="PythonLogo" className="image" />
+                C </span>                
+                <span className="years">2024</span>
+          </Button3>
+
+          <Button3 
+          theme="orange"
+          customStyles={{marginLeft: '0%',marginRight: '5vw',marginBottom: '4vh',}}
+            onClick={() => openJobModal({
             company: 'Elm',
             position: '',
             years: 'Since 2023',
@@ -719,7 +734,7 @@ const StyledHeader = styled.h1`
 
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '0%',marginRight: '5vw',marginBottom: '0',}}
+          customStyles={{marginLeft: '5vw',marginRight: '0%',marginBottom: '0',}}
             onClick={() => openJobModal({
             company: 'P5.js',
             position: '',
@@ -734,7 +749,7 @@ const StyledHeader = styled.h1`
 
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '16vw',marginRight: '0%',marginBottom: '0%',}}
+          customStyles={{marginLeft: '0%',marginRight: '0%',marginBottom: '0%',}}
             onClick={() => openJobModal({
             company: 'Processing Python',
             position: '',
@@ -749,7 +764,7 @@ const StyledHeader = styled.h1`
 
           <Button3 
           theme="orange"
-          customStyles={{marginLeft: '0%',marginRight: '16vw',marginBottom: '0',}}
+          customStyles={{marginLeft: '0%',marginRight: '5vw',marginBottom: '0',}}
             onClick={() => openJobModal({
             company: 'GitHub',
             position: '',
