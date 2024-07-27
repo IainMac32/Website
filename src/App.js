@@ -172,6 +172,60 @@ const Button3 = styled.button`
 
 
 
+const Button4 = styled.button`
+  box-sizing: border-box;
+  position: relative;
+  position: relative;
+  background-color: ${(props) => theme[props.theme].default};
+  color: white;
+  border-radius: 15px;
+  outline: 0;
+  cursor: pointer;
+  border-style:none;
+  border: 3px solid black; /* Add a black border */
+  transition: ease background-color 250ms, ease transform 250ms;
+  display: flex;
+  flex-direction: column; /* To display company and years vertically */
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap; /* Prevents wrapping to new lines */
+
+  &:hover {
+    background-color: ${(props) => theme[props.theme].hover};
+    transform: scale(1.03);
+  }
+
+  .company {
+    font-weight: bold;
+  }
+
+  .position {
+    font-style: italic; /* Adjust styles for the position text */
+    margin-top: 0.2em;
+  }
+
+  .years {
+    font-size: 1em; 
+    margin-top: 0.2em;
+  }
+
+  box-sizing: border-box; /* Include padding and border in the total width */
+  ${(props) => props.customStyles}
+
+  @media (min-width: 768px) {
+    width: 31vw; 
+    font-size: 1.9vw; 
+    height: 21vh; 
+
+  }
+
+  @media (max-width: 768px) {
+    width: 100%; 
+    margin: 10px; 
+    font-size: 2.0vh; 
+    padding: 3vh 15%; 
+  }
+`;
 
 
 
@@ -473,12 +527,70 @@ const StyledHeader = styled.h1`
 
 
         <ButtonContainer>
-          <Button2 
+
+        <Button4 
           theme="orange"
           customStyles={{
             marginLeft: '5.0vw',
             marginRight: '0%',
-            marginBottom: '2.5%',
+            marginBottom: '0.5%',
+
+          }}
+            onClick={() => openJobModal({
+            company: 'STEM Camp',
+            position: 'Camp Counselor',
+            years: ' Jun 2024 - Aug 2024',
+            duties: "Taught kids ages 5-12 how to code in Python and block languages and led a STEM-themed curriculum with inquiry-based learning. \n\nConstantly communicated within a small team of 6 about kids' safety and STEM activities."
+          })}>
+            <span className="company">STEM Camp</span>
+            <span className="position">Camp Counselor</span>
+            <span className="years"> Jun 2024 - Aug 2024</span>
+          </Button4>
+
+        <Button4 
+          theme="orange"
+          customStyles={{
+            marginLeft: '0%',
+            marginRight: '5.0vw',
+            marginBottom: '0.5%',
+
+          }}
+            onClick={() => openJobModal({
+            company: 'Tutor.AI',
+            position: 'Software Consultant',
+            years: 'March 2024 - Aug 2024',
+            duties: 'Reviewed the backend code of a start up company that created an AI website to match tutors and students within schools. \n\nThe backend Python program included Vectorization, Vector Databases, and Matching Algorithms which I all gave feedback on while also consistently communicating and working with the small team leading the project to achieve optimal code.'
+          })}>
+            <span className="company">Tutor.AI</span>
+            <span className="position">Software Consultant</span>
+            <span className="years">March 2024 - Aug 2024</span>
+          </Button4>
+
+        <Button4 
+          theme="orange"
+          customStyles={{
+            marginLeft: '5.0vw',
+            marginRight: '0%',
+            marginBottom: '0.5%',
+
+          }}
+            onClick={() => openJobModal({
+            company: 'Steamoji',
+            position: 'Learning Facilitator',
+            years: 'May 2024 - Jun 2024',
+            duties: 'Helped kids ages 5-14 learn about scratch coding, 3D printing, animation, photo editing, and problem solving techniques. /n/nImproved leadership skills through guiding and teaching up to 10 kids at a time in a fast-paced environment.'
+          })}>
+            <span className="company">Steamoji</span>
+            <span className="position">Learning Facilitator</span>
+            <span className="years">May 2024 - Jun 2024</span>
+          </Button4>
+
+          <Button4 
+          theme="orange"
+          customStyles={{
+            marginLeft: '0',
+            marginRight: '5.0vw',
+            marginBottom: '0.5%',
 
           }}
             onClick={() => openJobModal({
@@ -490,13 +602,13 @@ const StyledHeader = styled.h1`
             <span className="company">McMaster AI Society</span>
             <span className="position">Software Developer</span>
             <span className="years">Oct 2023 - Mar 2024</span>
-          </Button2>
+          </Button4>
   
-          <Button2 theme="orange" 
+          <Button4 theme="orange" 
           customStyles={{
-            marginLeft: '0%',
-            marginRight: '5.0vw',
-            marginBottom: '2.5%',
+            marginLeft: '5.0vw',
+            marginRight: '0',
+            marginBottom: '0.5%',
           }}
           onClick={() => openJobModal({
             company: 'Town of Oakville',
@@ -507,13 +619,13 @@ const StyledHeader = styled.h1`
             <span className="company">Town of Oakville</span>
             <span className="position">General Labourer</span>
             <span className="years">May 2023 - Aug 2023</span>
-          </Button2>
+          </Button4>
   
-          <Button2 theme="orange" 
+          <Button4 theme="orange" 
           customStyles={{
-            marginLeft: '5vw',
-            marginRight: '0%',
-            marginBottom: '0%',
+            marginLeft: '0',
+            marginRight: '5.0vw',
+            marginBottom: '0.5%',
           }}
           onClick={() => openJobModal({
             company: 'LocalStudent.com',
@@ -524,12 +636,12 @@ const StyledHeader = styled.h1`
             <span className="company">LocalStudent.com</span>
             <span className="position">Landscaper</span>
             <span className="years">Jul 2022 - Sep 2022</span>
-          </Button2>
+          </Button4>
   
-          <Button2 theme="orange" 
+          <Button4 theme="orange" 
           customStyles={{
-            marginLeft: '0%',
-            marginRight: '5vw',
+            marginLeft: '5.0vw',
+            marginRight: '0',
             marginBottom: '0%',
           }}
           onClick={() => openJobModal({
@@ -541,14 +653,14 @@ const StyledHeader = styled.h1`
             <span className="company">Digital Fire</span>
             <span className="position">IT Co-op Placement</span>
             <span className="years">Feb 2022 - Jun 2022</span>
-          </Button2>
+          </Button4>
 
-          <Button2 theme="orange" 
+          <Button4 theme="orange" 
           customStyles={{
-            marginLeft: '29%',
-            marginRight: '0%',
+            marginLeft: '0%',
+            marginRight: '5.0vw',
             marginBottom: '0%',
-            marginTop: '2.5%',
+            marginTop: '0%',
 
           }}
           onClick={() => openJobModal({
@@ -560,7 +672,7 @@ const StyledHeader = styled.h1`
             <span className="company">Sobeys</span>
             <span className="position">Front End Cashier</span>
             <span className="years">May 2021 - Sep 2021</span>
-          </Button2>        
+          </Button4>        
         </ButtonContainer>
 
         <JobModal isOpen={jobModalOpen} onClose={closeJobModal} jobInfo={selectedJob} />
@@ -581,13 +693,51 @@ const StyledHeader = styled.h1`
         <StyledH1>Projects</StyledH1>
 
         <ButtonContainer>
+        <Button2 
+            theme="orange"
+            customStyles={{
+              marginLeft: '5vw',
+              marginRight: '0%',
+              marginBottom: '0%',
+              marginTop: '2.5%',
+            }}
+            onClick={() => openJobModal({
+              company: 'JustTheInstructions (Chrome Extension AI Model)',
+              position: 'GitHub',
+              years: 'May 2024 - July 2024', 
+              duties: 'Programmed in Python, JS, HTML, and JSON to create an AI Chrome extension that filters unnecessary text from recipe/DIY websites. \n\nThe process included learning about how to train an AI model using public data which was used to filter websites as well as Google’s extension system so that we could create a simple-looking product for anyone to use.',
+              githubLink: 'https://github.com/IainMac32/JustTheInstruction', 
+            })}>
+            <span className="company">JustTheInstructions<br></br>(Chrome Extension AI Model)</span>
+            <span className="years">May 2024 - July 2024</span>
+          </Button2>
+
           <Button2 
             theme="orange"
             customStyles={{
-              marginLeft: '0%',
+              marginLeft: '0&',
+              marginRight: '5vw',
+              marginBottom: '0%',
+              marginTop: '2.5%',
+            }}
+            onClick={() => openJobModal({
+              company: 'McMaster Google Hackathon',
+              position: 'DevPost',
+              years: 'Dec 2023', 
+              duties: 'Finished 1st place in the Google Developer Student Clubs McMaster Hackathon Equality and Accessibility category.\n\nThis was my first hackathon, and it was a fantastic experience. It lasted 26 hours and had over 175 participants. The hackathon required incorporating at least one Google technology and contributing to one of the 17 United Nations Sustainable Development Goals.\n\n Our project, SparkSlides, automates slideshow creation using Google and other technologies such as Google Slides, Google Drive, and Google Image Search APIs, as well as Open AIs WhisperAI and GPT-4. Users input a topic and receive a fully formatted presentation with titles, jot notes and images.',
+              githubLink: 'https://devpost.com/software/sparkslides',
+            })}>
+            <span className="company">McMaster Google Hackathon</span>
+            <span className="years">Feb 2024</span>
+          </Button2>
+
+          <Button2 
+            theme="orange"
+            customStyles={{
+              marginLeft: '29%',
               marginRight: '0%',
               marginBottom: '0%',
-              marginTop: '15vh',
+              marginTop: '2.5%',
             }}
             onClick={() => openJobModal({
               company: 'Portfolio Website',
@@ -600,24 +750,7 @@ const StyledHeader = styled.h1`
             <span className="years">Dec 2023 - Present</span>
           </Button2>
 
-          <Button2 
-            theme="orange"
-            customStyles={{
-              marginLeft: '2.5vw',
-              marginRight: '0%',
-              marginBottom: '0%',
-              marginTop: '15vh',
-            }}
-            onClick={() => openJobModal({
-              company: 'McMaster Google Hackathon',
-              position: 'DevPost',
-              years: 'Dec 2023', 
-              duties: 'Finished 1st place in the Google Developer Student Clubs McMaster Hackathon Equality and Accessibility category.\n\nThis was my first hackathon, and it was a fantastic experience. It lasted 26 hours and had over 175 participants. The hackathon required incorporating at least one Google technology and contributing to one of the 17 United Nations Sustainable Development Goals.\n\n Our project, SparkSlides, automates slideshow creation using Google and other technologies such as Google Slides, Google Drive, and Google Image Search APIs, as well as Open AIs WhisperAI and GPT-4. Users input a topic and receive a fully formatted presentation with titles, jot notes and images.',
-              githubLink: 'https://devpost.com/software/sparkslides',
-            })}>
-            <span className="company">McMaster Google Hackathon</span>
-            <span className="years">Feb 2024</span>
-          </Button2>
+
 
         </ButtonContainer>
 
