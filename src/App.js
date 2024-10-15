@@ -105,8 +105,8 @@ const Button2 = styled.button`
   @media (max-width: 768px) {
     width: 100%; 
     margin: 2px; 
-    font-size: 2.0vh; 
-    padding: 1vh 15%;
+    font-size: 1.6vh; 
+    padding: 1vh 10%;
 
   }
 `;
