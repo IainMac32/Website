@@ -222,7 +222,7 @@ const Button4 = styled.button`
 
   @media (max-width: 768px) {
 
-    width: 100%; 
+    width: 80%; 
     margin: 2px; 
     font-size: 2.0vh; 
     padding: 1vh 15%;
