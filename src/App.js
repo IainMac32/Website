@@ -537,14 +537,13 @@ const StyledHeader = styled.h1`
 
           }}
             onClick={() => openJobModal({
-            company: 'STEM Camp',
-            position: 'Camp Counselor',
-            years: ' Jun 2024 - Aug 2024',
-            duties: "Taught kids ages 5-12 how to code in Python and block languages and led a STEM-themed curriculum with inquiry-based learning. \n\nConstantly communicated within a small team of 6 about kids' safety and STEM activities."
-          })}>
-            <span className="company">STEM Camp</span>
-            <span className="position">Camp Counselor</span>
-            <span className="years"> Jun 2024 - Aug 2024</span>
+              company: 'McMaster AI Society',
+              position: 'Project Lead',
+              years: 'Sept 2024 - Mar 2025',
+              duties: "Our team of 7 created a project that allows users to take pictures of paint, pencil crayons, or markers they have and using AI to detect the medium suggests art they can create with the colours and medium they took a photo of.\n\n The project utilized Python, TensorFlow, PIL for the backend . The frontend uses React.js, and Firebase for a user-friendly website. \n\nLed weekly meetings to discuss progress on the front and back end, assign tasks, and ensure deadlines were being met."          })}>
+            <span className="company">McMaster AI Society</span>
+            <span className="position">Project Lead</span>
+            <span className="years"> Sept 2024 - Mar 2025</span>
           </Button4>
 
         <Button4 
@@ -556,14 +555,13 @@ const StyledHeader = styled.h1`
 
           }}
             onClick={() => openJobModal({
-            company: 'Tutor.AI',
-            position: 'Software Consultant',
-            years: 'March 2024 - Aug 2024',
-            duties: 'Reviewed the backend code of a start up company that created an AI website to match tutors and students within schools. \n\nThe backend Python program included Vectorization, Vector Databases, and Matching Algorithms which I all gave feedback on while also consistently communicating and working with the small team leading the project to achieve optimal code.'
-          })}>
-            <span className="company">Tutor.AI</span>
-            <span className="position">Software Consultant</span>
-            <span className="years">March 2024 - Aug 2024</span>
+              company: 'Google Developer Student Clubs',
+              position: 'Software Developer',
+              years: 'Sept 2024 - Mar 2025',
+              duties: "The team of 10 worked on an Ocular Disease Identifier that uses AI to detect disease in fundus images.\n\n The project utilizes Python, TensorFlow, and PIL for the backend and React.js for the frontend.\n\n Communicated during weekly meetings to discuss progress and completed 2 - 3 week sprints to meet deadlines."          })}>
+            <span className="company">Google Developer Student Clubs</span>
+            <span className="position">Software Developer</span>
+            <span className="years">Sept 2024 - Mar 2025</span>
           </Button4>
 
         <Button4 
@@ -575,14 +573,13 @@ const StyledHeader = styled.h1`
 
           }}
             onClick={() => openJobModal({
-            company: 'Steamoji',
-            position: 'Learning Facilitator',
-            years: 'May 2024 - Jun 2024',
-            duties: 'Helped kids ages 5-14 learn about scratch coding, 3D printing, animation, photo editing, and problem solving techniques. /n/nImproved leadership skills through guiding and teaching up to 10 kids at a time in a fast-paced environment.'
-          })}>
-            <span className="company">Steamoji</span>
-            <span className="position">Learning Facilitator</span>
-            <span className="years">May 2024 - Jun 2024</span>
+              company: 'STEM Camp',
+              position: 'Camp Counselor',
+              years: ' Jun 2024 - Aug 2024',
+              duties: "Taught kids ages 5-12 how to code in Python and block languages and led a STEM-themed curriculum with inquiry-based learning. \n\nConstantly communicated within a small team of 6 about kids' safety and STEM activities."          })}>
+            <span className="company">STEM Camp</span>
+            <span className="position">Camp Counselor</span>
+            <span className="years">Jun 2024 - Aug 2024</span>
           </Button4>
 
           <Button4 
@@ -594,14 +591,13 @@ const StyledHeader = styled.h1`
 
           }}
             onClick={() => openJobModal({
-            company: 'McMaster AI Society',
-            position: 'Software Developer',
-            years: 'Oct 2023 - Mar 2024',
-            duties: 'Our project team of 7 created a website called SecondBrain that allows users to upload documents to their unique database and ask questions about the documents at any time without the need of ever uploading the document more than once.\n\nWe utilized technologies such as GPT-4, vectorization, vector databases, LangChain, and Similarity Search through API integration.\n\nCollaborated seamlessly within a team of 7 through GitHub, actively contributing to group sessions while engaging in discussions about design ideas during weekly meetings and daily reporting.'
-          })}>
-            <span className="company">McMaster AI Society</span>
-            <span className="position">Software Developer</span>
-            <span className="years">Oct 2023 - Mar 2024</span>
+              company: 'Tutor.AI',
+              position: 'Software Consultant',
+              years: 'Mar 2024 - Aug 2024',
+              duties: 'Reviewed the backend code of a start up company that created an AI website to match tutors and students within schools. \n\nThe backend Python program included Vectorization, Vector Databases, and Matching Algorithms which I all gave feedback on while also consistently communicating and working with the small team leading the project to achieve optimal code.'          })}>
+            <span className="company">Tutor.AI</span>
+            <span className="position">Software Consultant</span>
+            <span className="years">Mar 2024 - Aug 2024</span>
           </Button4>
   
           <Button4 theme="orange" 
@@ -611,14 +607,13 @@ const StyledHeader = styled.h1`
             marginBottom: '0.5%',
           }}
           onClick={() => openJobModal({
-            company: 'Town of Oakville',
-            position: 'General Labourer',
-            years: 'May 2023 - Aug 2023',
-            duties: 'Operated heavy machinery, including lawnmowers and trimmers, to thoroughly cut and trim public parks and trails.\n\nDemonstrated leadership by taking charge during periods of low activity, ensuring tasks were organized and completed properly.'
-          })}>
-            <span className="company">Town of Oakville</span>
-            <span className="position">General Labourer</span>
-            <span className="years">May 2023 - Aug 2023</span>
+            company: 'Steamoji',
+            position: 'Learning Facilitator',
+            years: 'May 2024 - Jun 2024',
+            duties: 'Helped kids ages 5-14 learn about scratch coding, 3D printing, animation, photo editing, and problem solving techniques. /n/nImproved leadership skills through guiding and teaching up to 10 kids at a time in a fast-paced environment.'          })}>
+            <span className="company">Steamoji</span>
+            <span className="position">Learning Facilitator</span>
+            <span className="years">May 2024 - Jun 2024</span>
           </Button4>
   
           <Button4 theme="orange" 
@@ -628,14 +623,13 @@ const StyledHeader = styled.h1`
             marginBottom: '0.5%',
           }}
           onClick={() => openJobModal({
-            company: 'LocalStudent.com',
-            position: 'Landscaper',
-            years: 'Jul 2022 - Sep 2022',
-            duties: 'Founded and operated my own lawn care service while at LocalStudent.com, taking on responsibilities such as client management, scheduling, and ensuring high-quality landscaping services.\n\nTook care of lawns by mowing and trimming as well as weeding gardens with precision, ensuring a neat and polished appearance for outdoor spaces.'
-           })}>
-            <span className="company">LocalStudent.com</span>
-            <span className="position">Landscaper</span>
-            <span className="years">Jul 2022 - Sep 2022</span>
+            company: 'McMaster AI Society',
+            position: 'Software Developer',
+            years: 'Oct 2023 - Mar 2024',
+            duties: 'Our project team of 7 created a website called SecondBrain that allows users to upload documents to their unique database and ask questions about the documents at any time without the need of ever uploading the document more than once.\n\nWe utilized technologies such as GPT-4, vectorization, vector databases, LangChain, and Similarity Search through API integration.\n\nCollaborated seamlessly within a team of 7 through GitHub, actively contributing to group sessions while engaging in discussions about design ideas during weekly meetings and daily reporting.'           })}>
+            <span className="company">McMaster AI Society</span>
+            <span className="position">Software Developer</span>
+            <span className="years">Oct 2023 - Mar 2024</span>
           </Button4>
   
           <Button4 theme="orange" 
@@ -645,14 +639,13 @@ const StyledHeader = styled.h1`
             marginBottom: '0%',
           }}
           onClick={() => openJobModal({
-            company: 'Digital Fire',
-            position: 'IT Co-op Placement',
-            years: 'Feb 2022 - Jun 2022',
-            duties: 'Applied technical skills with precision to efficiently set up, configure, and upgrade laptops and desktops, integrating hardware and software components to ensure optimal system performance and long-term reliability.\n\nAcquired coding proficiency to develop an office inventory system, resulting in improved organization and operational efficiency.\n\nPlayed a key role in important projects by working on hardware construction, and enhancing overall technology.'
-          })}>
-            <span className="company">Digital Fire</span>
-            <span className="position">IT Co-op Placement</span>
-            <span className="years">Feb 2022 - Jun 2022</span>
+            company: 'Town of Oakville',
+            position: 'General Labourer',
+            years: 'May 2023 - Aug 2023',
+            duties: 'Operated heavy machinery, including lawnmowers and trimmers, to thoroughly cut and trim public parks and trails.\n\nDemonstrated leadership by taking charge during periods of low activity, ensuring tasks were organized and completed properly.'          })}>
+            <span className="company">Town of Oakville</span>
+            <span className="position">General Labourer</span>
+            <span className="years">May 2023 - Aug 2023</span>
           </Button4>
 
           <Button4 theme="orange" 
@@ -664,14 +657,13 @@ const StyledHeader = styled.h1`
 
           }}
           onClick={() => openJobModal({
-            company: 'Sobeys',
-            position: 'Front End Cashier',
-            years: 'May 2021 - Sep 2021',
-            duties: 'Operated an advanced point-of-sale system with accuracy, ensuring smooth customer transactions and accurate sales records.\n\nDeveloped effective communication skills to assist customers, creating a positive shopping experience and contributing to a customer-focused environment.'
-          })}>
-            <span className="company">Sobeys</span>
-            <span className="position">Front End Cashier</span>
-            <span className="years">May 2021 - Sep 2021</span>
+            company: 'Digital Fire',
+            position: 'IT Co-op Placement',
+            years: 'Feb 2022 - Jun 2022',
+            duties: 'Applied technical skills with precision to efficiently set up, configure, and upgrade laptops and desktops, integrating hardware and software components to ensure optimal system performance and long-term reliability.\n\nAcquired coding proficiency to develop an office inventory system, resulting in improved organization and operational efficiency.\n\nPlayed a key role in important projects by working on hardware construction, and enhancing overall technology.'          })}>
+            <span className="company">Digital Fire</span>
+            <span className="position">IT Co-op Placement</span>
+            <span className="years">Feb 2022 - Jun 2022</span>
           </Button4>        
         </ButtonContainer>
 
@@ -781,7 +773,7 @@ const StyledHeader = styled.h1`
             company: 'Python',
             position: '',
             years: 'Since 2020',
-            duties: '\n\nPython is likely my strongest coding language, as I have been using it since I was about 14.\n\nI think that Python is so distinctive as it is easy for beginners to learn but has such a high level of potential especially when creating AI.\n\nThe backend of my current Mac AI project is coded in Python so I am continually increasing my knowledge about the language.            '
+            duties: '\n\nPython is likely my strongest coding language, as I have been using it since I was about 14.\n\nI think that Python is so distinctive as it is easy for beginners to learn but has such a high level of potential especially when creating AI.\n\nSome libraries that I am continuously using for my AI projects are: TensorFlow, PIL, Pandas, NumPy, and Matplotlib             '
           })}>
               <span className="language">
                 <img src={require('./assets/python.png')} alt="PythonLogo" className="image" />
