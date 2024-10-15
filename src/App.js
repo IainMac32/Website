@@ -104,9 +104,10 @@ const Button2 = styled.button`
 
   @media (max-width: 768px) {
     width: 100%; 
-    margin: 10px; 
+    margin: 2px; 
     font-size: 2.0vh; 
-    padding: 3vh 15%; 
+    padding: 1vh 15%;
+
   }
 `;
 
@@ -220,10 +221,12 @@ const Button4 = styled.button`
   }
 
   @media (max-width: 768px) {
+
     width: 100%; 
-    margin: 10px; 
+    margin: 2px; 
     font-size: 2.0vh; 
-    padding: 3vh 15%; 
+    padding: 1vh 15%;
+
   }
 `;
 
@@ -773,7 +776,7 @@ const StyledHeader = styled.h1`
             company: 'Python',
             position: '',
             years: 'Since 2020',
-            duties: '\n\nPython is likely my strongest coding language, as I have been using it since I was about 14.\n\nI think that Python is so distinctive as it is easy for beginners to learn but has such a high level of potential especially when creating AI.\n\nSome libraries that I am continuously using for my AI projects are: TensorFlow, PIL, Pandas, NumPy, and Matplotlib             '
+            duties: '\n\nPython is likely my strongest coding language, as I have been using it since I was about 14.\n\nI think that Python is so distinctive as it is easy for beginners to learn but has such a high level of potential especially when creating AI.\n\nSome libraries that I am continuously using for my AI projects are: TensorFlow, PIL, Pandas, NumPy, and Matplotlib.             '
           })}>
               <span className="language">
                 <img src={require('./assets/python.png')} alt="PythonLogo" className="image" />
