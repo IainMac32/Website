@@ -505,7 +505,7 @@ const StyledHeader = styled.h1`
 
             <StyledParagraph>
               <p style={{  marginTop: "2%", marginRight: "7%",}}>
-                <HiText>Hi!</HiText> I'm Iain Macdonald, an inquisitive, diligent, and hard-working second-year computer science student at McMaster University. My aspiration is to pursue a career in the tech industry as a developer, and I am currently <BoldOutlineText>seeking a Summer co-op placement lasting 4 months</BoldOutlineText>. With a strong foundation in computer science principles and a passion for problem-solving, I am eager to apply my analytical and collaborative skills to a dynamic work environment.
+                <HiText>Hi!</HiText> I'm Iain Macdonald, an inquisitive, diligent, and hard-working second-year computer science student at McMaster University. My aspiration is to pursue a career in the tech industry as a developer, and I am currently seeking a <BoldOutlineText>2025 summer co-op placement lasting 4 months</BoldOutlineText>. With a strong foundation in computer science principles and a passion for problem-solving, I am eager to apply my analytical and collaborative skills to a dynamic work environment.
               </p>
             </StyledParagraph>
             
