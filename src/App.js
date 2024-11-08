@@ -508,7 +508,7 @@ const StyledHeader = styled.h1`
 
             <StyledParagraph>
               <p style={{  marginTop: "2%", marginRight: "7%",}}>
-                <HiText>Hi!</HiText> I'm Iain Macdonald, an inquisitive, diligent, and hard-working second-year computer science student at McMaster University. My aspiration is to pursue a career in the tech industry as a developer, and I am currently seeking a <BoldOutlineText>2025 summer co-op placement lasting 4 months</BoldOutlineText>. With a strong foundation in computer science principles and a passion for problem-solving, I am eager to apply my analytical and collaborative skills to a dynamic work environment.
+                <HiText>Hi!</HiText> Software developer and project lead, currently seeking a <BoldOutlineText>2025 summer co-op lasting 4 months</BoldOutlineText> with hands on experience in AI driven projects across diverse fields, including image recognition, healthcare, and educational platforms. Proficient in building and optimizing backend systems in Python, along with frontend development in React.js. Skilled in problem solving and enhancing efficiency through code reviews, sprints, and meeting deadlines.
               </p>
             </StyledParagraph>
             
@@ -543,7 +543,7 @@ const StyledHeader = styled.h1`
               company: 'McMaster AI Society',
               position: 'Project Lead',
               years: 'Sept 2024 - Mar 2025',
-              duties: "Our team of 7 created a project that allows users to take pictures of paint, pencil crayons, or markers they have and using AI to detect the medium suggests art they can create with the colours and medium they took a photo of.\n\n The project utilized Python, TensorFlow, PIL for the backend . The frontend uses React.js, and Firebase for a user-friendly website. \n\nLed weekly meetings to discuss progress on the front and back end, assign tasks, and ensure deadlines were being met."          })}>
+              duties: "Led a team of 6 in developing an AI based art recommendation tool, optimizing image recognition techniques within a convolution neural network for various mediums (paint, pencil crayons, and markers).\n\nSuccessfully oversaw front and back-end progress, boosting project efficiency through targeted task assignments and weekly meetings, leading to all deadlines being completed at least one week ahead of schedule."          })}>
             <span className="company">McMaster AI Society</span>
             <span className="position">Project Lead</span>
             <span className="years"> Sept 2024 - Mar 2025</span>
@@ -561,7 +561,7 @@ const StyledHeader = styled.h1`
               company: 'Google Developer Student Clubs',
               position: 'Software Developer',
               years: 'Sept 2024 - Mar 2025',
-              duties: "The team of 10 worked on an Ocular Disease Identifier that uses AI to detect disease in fundus images.\n\n The project utilizes Python, TensorFlow, and PIL for the backend and React.js for the frontend.\n\n Communicated during weekly meetings to discuss progress and completed 2 - 3 week sprints to meet deadlines."          })}>
+              duties: "Contributed to developing an AI Ocular Disease Identifier for eye scans, designed for potential use in medical diagnostics.\n\nCollaborated within a team of 10 to implement machine learning and enhance backend functionality.\n\nCoordinated through sprints to meet tight deadlines, consistently completing tasks days ahead of schedule."          })}>
             <span className="company">Google Developer Student Clubs</span>
             <span className="position">Software Developer</span>
             <span className="years">Sept 2024 - Mar 2025</span>
@@ -597,7 +597,7 @@ const StyledHeader = styled.h1`
               company: 'Tutor.AI',
               position: 'Software Consultant',
               years: 'Mar 2024 - Aug 2024',
-              duties: 'Reviewed the backend code of a start up company that created an AI website to match tutors and students within schools. \n\nThe backend Python program included Vectorization, Vector Databases, and Matching Algorithms which I all gave feedback on while also consistently communicating and working with the small team leading the project to achieve optimal code.'          })}>
+              duties: 'Reviewed and optimized backend code for a startup’s AI tutor student matching system, driving significant advancements in the project.\n\nAnalyzed program flow, algorithms, and vectorization techniques providing recommendations to boost efficiency and matching accuracy.\n\nCollaborated closely with project leads in weekly meetings and daily check ins.'          })}>
             <span className="company">Tutor.AI</span>
             <span className="position">Software Consultant</span>
             <span className="years">Mar 2024 - Aug 2024</span>
@@ -629,7 +629,7 @@ const StyledHeader = styled.h1`
             company: 'McMaster AI Society',
             position: 'Software Developer',
             years: 'Oct 2023 - Mar 2024',
-            duties: 'Our project team of 7 created a website called SecondBrain that allows users to upload documents to their unique database and ask questions about the documents at any time without the need of ever uploading the document more than once.\n\nWe utilized technologies such as GPT-4, vectorization, vector databases, LangChain, and Similarity Search through API integration.\n\nCollaborated seamlessly within a team of 7 through GitHub, actively contributing to group sessions while engaging in discussions about design ideas during weekly meetings and daily reporting.'           })}>
+            duties: 'Developed a Python based document Q&A tool leveraging Large Language Models, Vector Databases, and Similarity Search APIs.\n\nContributed to team sessions within a group of 7, focusing on techniques to improve user interaction and response accuracy.\n\nPresented at the Canadian Undergraduate Conference on AI, which led to a collaboration with the Tutor.AI startup.'           })}>
             <span className="company">McMaster AI Society</span>
             <span className="position">Software Developer</span>
             <span className="years">Oct 2023 - Mar 2024</span>
@@ -663,7 +663,7 @@ const StyledHeader = styled.h1`
             company: 'Digital Fire',
             position: 'IT Co-op Placement',
             years: 'Feb 2022 - Jun 2022',
-            duties: 'Applied technical skills with precision to efficiently set up, configure, and upgrade laptops and desktops, integrating hardware and software components to ensure optimal system performance and long-term reliability.\n\nAcquired coding proficiency to develop an office inventory system, resulting in improved organization and operational efficiency.\n\nPlayed a key role in important projects by working on hardware construction, and enhancing overall technology.'          })}>
+            duties: 'Configured and upgraded laptops and computers, improving efficiency for hardware and software integration.\n\nBoosted office productivity by coding a custom inventory system, applying technical skills to improve organization and efficiency.'          })}>
             <span className="company">Digital Fire</span>
             <span className="position">IT Co-op Placement</span>
             <span className="years">Feb 2022 - Jun 2022</span>
@@ -719,7 +719,7 @@ const StyledHeader = styled.h1`
               company: 'McMaster Google Hackathon',
               position: 'DevPost',
               years: 'Dec 2023', 
-              duties: 'Finished 1st place in the Google Developer Student Clubs McMaster Hackathon Equality and Accessibility category.\n\nThis was my first hackathon, and it was a fantastic experience. It lasted 26 hours and had over 175 participants. The hackathon required incorporating at least one Google technology and contributing to one of the 17 United Nations Sustainable Development Goals.\n\n Our project, SparkSlides, automates slideshow creation using Google and other technologies such as Google Slides, Google Drive, and Google Image Search APIs, as well as Open AIs WhisperAI and GPT-4. Users input a topic and receive a fully formatted presentation with titles, jot notes and images.',
+              duties: 'Finished 1st place in the Google Developer Student Clubs McMaster Hackathon Equality and Accessibility category.\n\nThis was my first hackathon, and it was a fantastic experience. It lasted 26 hours and had over 110 participants. The hackathon required incorporating at least one Google technology and contributing to one of the 17 United Nations Sustainable Development Goals.\n\n Our project, SparkSlides, automates slideshow creation using Google and other technologies such as Google Slides, Google Drive, and Google Image Search APIs, as well as Open AIs WhisperAI and GPT-4. Users input a topic and receive a fully formatted presentation with titles, jot notes and images.',
               githubLink: 'https://devpost.com/software/sparkslides',
             })}>
             <span className="company">McMaster Google Hackathon</span>
@@ -775,7 +775,7 @@ const StyledHeader = styled.h1`
             onClick={() => openJobModal({
             company: 'Python',
             position: '',
-            years: 'Since 2020',
+            years: '4 years',
             duties: '\n\nPython is likely my strongest coding language, as I have been using it since I was about 14.\n\nI think that Python is so distinctive as it is easy for beginners to learn but has such a high level of potential especially when creating AI.\n\nSome libraries that I am continuously using for my AI projects are: TensorFlow, PIL, Pandas, NumPy, and Matplotlib.             '
           })}>
               <span className="language">
@@ -790,7 +790,7 @@ const StyledHeader = styled.h1`
             onClick={() => openJobModal({
             company: 'React/CSS/HTML',
             position: '',
-            years: 'Since 2023',
+            years: '1 year',
             duties: '\n\nWhile learning React during the development of my website I learned how complex front-end design can be.\n\nI was able to learn how to think abstractly and technically about programming while using this framework. I learned how to use React within 2 weeks in order to make my personal website.'
           })}>
               <span className="language">
@@ -806,7 +806,7 @@ const StyledHeader = styled.h1`
             onClick={() => openJobModal({
             company: 'JavaScript',
             position: '',
-            years: 'Since 2022',
+            years: '1 year',
             duties: '\n\nWhile working on my personal website I learned how to program in JavaScript and I thoroughly enjoyed it.\n\nJavaScript allowed me to add a level of creativity to my code that I was unable to do before and it was genuinely entertaining. I hope to use more JavaScript in the future along with React to create more fascinating websites.\n\nIn addition to my website I have also used JS in the past to make personal projects within Google Appscript to manipulate Google Sheets. I even made a full inventory system with it during my Digital Fire co-op.'
           })}>
               <span className="language">
@@ -821,7 +821,7 @@ const StyledHeader = styled.h1`
             onClick={() => openJobModal({
             company: 'Java',
             position: '',
-            years: '2022',
+            years: '2 years',
             duties: '\n\nI learnt Java for the first time while in grade 12 and really enjoyed it. Java quickly became one of my favourite languages as it is very straightforward but still viable for large projects.\n\nI got really into Java during grade 12 but unfortunately, I haven’t found many chances to use it since so I hope I can find opportunities to utilize it in the future.'
           })}>
               <span className="language">
@@ -836,7 +836,7 @@ const StyledHeader = styled.h1`
             onClick={() => openJobModal({
             company: 'C',
             position: '',
-            years: '2024',
+            years: '1 year',
             duties: '\n\nI began coding in C during my first year of university part of a class called Computer Science Practice and Experience: Development Basics. I really enjoyed learning my first general purpose language especially learning about pointers, storage allocation, and more specifical details about how coding works in the hardware of computers.'
           })}>
               <span className="language">
@@ -851,7 +851,7 @@ const StyledHeader = styled.h1`
             onClick={() => openJobModal({
             company: 'Elm',
             position: '',
-            years: 'Since 2023',
+            years: '1 year',
             duties: '\n\nElm is what I learned during my first semester of university in a course called Introduction to Computational Thinking.\n\nElm was the first functional language that I learned so it took a while to adjust but after the semester I felt confident in functional coding.\n\nI had many group projects throughout the semester that not only increased my skills with Elm but also with communication and accountability while working within a group.'
           })}>
               <span className="language">
@@ -866,7 +866,7 @@ const StyledHeader = styled.h1`
             onClick={() => openJobModal({
             company: 'P5.js',
             position: '',
-            years: '2017 - 2022',
+            years: '4 years',
             duties: '\n\nI used P5.js while taking coding lessons from the age of 12 to 17 with Hatch Coding. \n\nThis was my introduction to visual programming and ever since I have been interested in learning new ways to show off my code in unique graphical ways, it even motivated me to make this website!\n\nThis is the language that I won both the Hatch Game Jam and Digital Coded Art Competition.'
           })}>
               <span className="language">
@@ -881,7 +881,7 @@ const StyledHeader = styled.h1`
             onClick={() => openJobModal({
             company: 'Processing Python',
             position: '',
-            years: '2017 - 2022',
+            years: '4 years',
             duties: '\n\nAlong with P5.js I also learned Processing Python while at Hatch Coding from the age of 12 to 17.\n\nI decided to learn Processing Python alongside P5.js so that I could learn the formatting of Python before learning the actual language.'
           })}>
               <span className="language">
@@ -896,7 +896,7 @@ const StyledHeader = styled.h1`
             onClick={() => openJobModal({
             company: 'GitHub',
             position: '',
-            years: 'Since 2023',
+            years: '2 years',
             duties: '\n\nI have been using GitHub for around a year now. I began using it to transfer my code between my laptop and PC while in school and now use it almost daily.\n\nI also use GitHub within the Mac AI club to work on projects so I am used to pushing, pulling, and committing within a team repository.'
           })}>
               <span className="language">
