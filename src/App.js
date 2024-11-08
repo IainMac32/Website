@@ -508,7 +508,7 @@ const StyledHeader = styled.h1`
 
             <StyledParagraph>
               <p style={{  marginTop: "2%", marginRight: "7%",}}>
-                <HiText>Hi!</HiText> i'm Iain, a software developer currently seeking a <BoldOutlineText>2025 summer co-op lasting 4 months</BoldOutlineText> with hands on experience in AI driven projects across diverse fields, including image recognition, healthcare, and educational platforms. I am proficient in building and optimizing backend systems in Python, along with frontend development in React.js. I am also skilled in problem solving and enhancing efficiency through code reviews, sprints, and meeting deadlines.
+                <HiText>Hi!</HiText> I'm Iain, a software developer currently seeking a <BoldOutlineText>2025 summer co-op lasting 4 months</BoldOutlineText> with hands on experience in AI driven projects across diverse fields, including image recognition, healthcare, and educational platforms. I am proficient in building and optimizing backend systems in Python, along with frontend development in React.js. I am also skilled in problem solving and enhancing efficiency through code reviews, sprints, and meeting deadlines.
               </p>
             </StyledParagraph>
             
